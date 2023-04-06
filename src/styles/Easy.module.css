@@ -9,14 +9,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
 }
 
 .circle {
   width: 300px;
   display: flex;
-  align-items: center;
   gap: 1rem;
+}
+
+.circle span {
+  margin-top: 2rem;
 }
 
 .bureaucracy {
@@ -32,6 +34,7 @@
 .container_bureaucracy {
   display: flex;
   align-items: center;
+  gap: .5rem;
 }
 
 .bureaucracy_title {

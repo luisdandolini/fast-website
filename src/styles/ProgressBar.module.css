@@ -21,3 +21,12 @@
   font-weight: bold;
   fill: #333;
 }
+
+.dottedLine {
+  width: 3px;
+  height: 60px;
+  background-image: linear-gradient(to bottom, currentColor 50%, transparent 50%);
+  background-size: 100% 6px;
+  margin: 10px auto;
+  color: green;
+}

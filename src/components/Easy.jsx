@@ -46,6 +46,7 @@ const Easy = () => {
             size={100}
             strokeWidth={5}
             number={4}
+            isLast={true}
           />
           <span>Ganhe comissão na venda!</span>
         </div>

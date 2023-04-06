@@ -1,0 +1,44 @@
+.container_footer {
+  height: 250px;
+  margin-top: 8rem;
+  background-color: #f5f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container_img img {
+  width: 60px;
+  height: 60px;
+}
+
+.info {
+  font-size: .8rem;
+  text-align: left;
+}
+
+.info p {
+  margin-bottom: 0px;
+}
+
+.telephone {
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.address {
+  margin-left: 1rem;
+}
+
+.email {
+  margin-left: 1rem;
+  padding-top: 1rem;
+}

@@ -21,9 +21,27 @@ const containersData = [
 
 const Premium = () => {
   const [currentContainer, setCurrentContainer] = useState(1);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
-  const handleContainerChange = () => {
-    setCurrentContainer((currentContainer % containersData.length) + 1);
+  const handleContainerChange = (direction) => {
+    if (direction === 'left') {
+      setCurrentContainer((currentContainer % containersData.length) + 1);
+    } else {
+      setCurrentContainer(currentContainer === 1 ? containersData.length : currentContainer - 1);
+    }
+  };
+
+  const handleTouchStart = (event) => {
+    setTouchStartX(event.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 100) {
+      handleContainerChange('left');
+    } else if (touchStartX - touchEndX < -100) {
+      handleContainerChange('right');
+    }
   };
 
   return (
@@ -34,6 +52,9 @@ const Premium = () => {
         <div
           key={index}
           className={currentContainer === index + 1 ? styles.container : styles.container2}
+          onTouchStart={handleTouchStart}
+          onTouchMove={(event) => setTouchEndX(event.targetTouches[0].clientX)}
+          onTouchEnd={handleTouchEnd}
         >
           <div className={styles.bg} style={{ backgroundImage: `url(${container.backgroundUrl})` }}></div>
           <div className={styles.container_text}>
@@ -42,7 +63,7 @@ const Premium = () => {
                 <span
                   key={index}
                   className={currentContainer === index + 1 ? styles.active : ""}
-                  onClick={handleContainerChange}
+                  onClick={() => handleContainerChange(index + 1)}
                 >
                 </span>
               ))}

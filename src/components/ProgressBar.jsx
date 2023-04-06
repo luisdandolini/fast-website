@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import styles from '../styles/ProgressBar.module.css';
 
-const CircularProgressBar = ({ value, maxValue, size, strokeWidth, number }) => {
+const CircularProgressBar = ({ value, maxValue, size, strokeWidth, number, isLast }) => {
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const [currentValue, setCurrentValue] = useState(0);
@@ -54,6 +54,7 @@ const CircularProgressBar = ({ value, maxValue, size, strokeWidth, number }) => 
   }, [animationTriggered, animateProgressBar]);
 
   const progress = ((currentValue / maxValue) * 100) * (circumference / 100);
+  
 
   return (
     <div className={styles.circularProgressBar} ref={progressBarRef}>
@@ -92,6 +93,7 @@ const CircularProgressBar = ({ value, maxValue, size, strokeWidth, number }) => 
           {number}
         </text>
       </svg>
+      {!isLast && <div className={styles.dottedLine}></div>}
     </div>
   );
 };
