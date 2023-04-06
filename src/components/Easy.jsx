@@ -3,7 +3,7 @@ import styles from '../styles/Easy.module.css'
 
 const Easy = () => {
   return(
-    <section>
+    <section className={styles.bg_desktop}>
       <h2 className={styles.title}>Veja como é fácil</h2>
       <div className={styles.container}>
         <div className={styles.circle}>
@@ -54,7 +54,7 @@ const Easy = () => {
       <div className={styles.bureaucracy}>
         <div className={styles.container_bureaucracy}>
           <p className={styles.bureaucracy_title}>Sem <br />burocracia</p>
-          <p className={styles.bureaucracy_subtitle}>Sem necessidade de exclusividade somente autorização de venda do proprietrário</p>
+          <p className={styles.bureaucracy_subtitle}><span>Sem necessidade de exclusividade</span> somente autorização de venda do proprietrário</p>
         </div>
         <div className={styles.details}></div>
       </div>

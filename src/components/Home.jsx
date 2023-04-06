@@ -12,7 +12,7 @@ const Home = () => {
       <div className={styles.rounded_rectangle}></div>
       <div className={styles.rounded_second_rectangle}></div>
       
-      <div className={styles.arrow}>
+      <div className={`${styles.arrow} ${styles.none}`}>
         <Icon path={mdiArrowDown} size={2} color={'#3e5e3f'}/>
       </div>
     </section>

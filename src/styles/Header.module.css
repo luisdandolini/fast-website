@@ -1,0 +1,13 @@
+.container_header {
+  padding-left: .5rem;
+}
+
+.logo {
+  width: 42px;
+}
+
+@media(min-width: 767px) {
+  .container_header {
+   padding: 0 6rem;
+  }
+}

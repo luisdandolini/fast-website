@@ -1,78 +1,72 @@
+import React, { useState, useEffect } from 'react';
 import styles from '../styles/Premium.module.css';
-import { useState } from 'react';
+import { useMediaQuery } from "react-responsive";
+import PremiumMobile from './PremiumMobile';
 
-const containersData = [
+const images = [
+  '/banner_carteira.jpg',
+  '/banner_leads.jpg',
+  '/banner_venda.jpg'
+];
+
+const reasons = [
   {
     title: 'Mais produtos na carteira',
-    text: 'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt',
-    backgroundUrl: '/banner_venda.jpg',
+    description: 'Tenha acesso à pauta da Fast e evite a perda de vendas por falta de opções.'
   },
   {
     title: 'Mais benefícios para você',
-    text: 'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt',
-    backgroundUrl: '/banner_carteira.jpg',
+    description: 'Aproveite as vantagens exclusivas e aumente sua performance no mercado.'
   },
   {
-    title: 'Mais benefícios para você5',
-    text: 'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt',
-    backgroundUrl: '/banner_leads.jpg',
-  },
+    title: 'Aumente suas vendas',
+    description: 'Com a nossa plataforma, você tem acesso a melhores leads e oportunidades de negócio.'
+  }
 ];
 
 const Premium = () => {
-  const [currentContainer, setCurrentContainer] = useState(1);
-  const [touchStartX, setTouchStartX] = useState(0);
-  const [touchEndX, setTouchEndX] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const handleContainerChange = (direction) => {
-    if (direction === 'left') {
-      setCurrentContainer((currentContainer % containersData.length) + 1);
-    } else {
-      setCurrentContainer(currentContainer === 1 ? containersData.length : currentContainer - 1);
-    }
-  };
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
 
-  const handleTouchStart = (event) => {
-    setTouchStartX(event.targetTouches[0].clientX);
-  };
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
 
-  const handleTouchEnd = () => {
-    if (touchStartX - touchEndX > 100) {
-      handleContainerChange('left');
-    } else if (touchStartX - touchEndX < -100) {
-      handleContainerChange('right');
-    }
-  };
+  const [isMobile, setIsMobile] = useState(false);
+  const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
+
+  useEffect(() => {
+    setIsMobile(isMobileQuery);
+  }, [isMobileQuery]);
+
+  if (isMobile) {
+    return <PremiumMobile />;
+  }
 
   return (
-    <section className={styles.premium}>
+    <section>
       <h1 className={styles.title}>Motivos para ser Premium</h1>
 
-      {containersData.map((container, index) => (
-        <div
-          key={index}
-          className={currentContainer === index + 1 ? styles.container : styles.container2}
-          onTouchStart={handleTouchStart}
-          onTouchMove={(event) => setTouchEndX(event.targetTouches[0].clientX)}
-          onTouchEnd={handleTouchEnd}
-        >
-          <div className={styles.bg} style={{ backgroundImage: `url(${container.backgroundUrl})` }}></div>
-          <div className={styles.container_text}>
-            <div className={styles.counter}>
-              {containersData.map((_, index) => (
-                <span
-                  key={index}
-                  className={currentContainer === index + 1 ? styles.active : ""}
-                  onClick={() => handleContainerChange(index + 1)}
-                >
-                </span>
-              ))}
+      <div className={styles.container_premium}>
+        <div className={styles.bg} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}></div>
+
+        <div className={styles.content_premium}>
+          {reasons.map((reason, index) => (
+            <div key={index} className={styles.container_content}>
+              <div className={currentImageIndex === index ? styles.detail : ''}></div>
+              <div>
+                <h2>{reason.title}</h2>
+                <p>{reason.description}</p>
+              </div>
             </div>
-            <h2>{container.title}</h2>
-            <p>{container.text}</p>
-          </div>
+          ))}
         </div>
-      ))}
+      </div>
     </section>
   );
 };

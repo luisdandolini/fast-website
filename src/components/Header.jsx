@@ -9,7 +9,7 @@ import {
   NavLink,
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../styles/HeaderMobile.module.css';
+import styles from '../styles/Header.module.css';
 
 function HeaderMobile(props) {
   const [collapsed, setCollapsed] = useState(true);

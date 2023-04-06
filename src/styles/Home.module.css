@@ -50,3 +50,23 @@
   position: relative;
   top: 258px;
 }
+
+@media(min-width: 767px) {
+  .container_home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container_home_title {
+    width: 400px;
+    text-align: left;
+    margin-left: 8rem;
+    margin-top: 2rem;
+  }
+  .container_home button {
+    margin-left: 10rem;
+  }
+  .none {
+    display: none;
+  }
+}

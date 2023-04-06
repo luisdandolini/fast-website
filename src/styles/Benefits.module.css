@@ -1,5 +1,5 @@
 .container_benefits {
-  height: 1600px;
+  /* height: 1600px; */
   background: linear-gradient(93deg, rgba(234,247,235,1) 0%, rgba(255,255,255,1) 100%);
   margin-top: 4rem;
 }
@@ -45,4 +45,34 @@
   border-radius: .5rem;
   color: #fff;
   background-color: #3e5e3f;
+}
+
+.container_benefits_desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  gap: 4rem;
+}
+
+.description {
+  width: 350px;
+}
+
+@media(max-width: 767px) {
+  .noneDesktop {
+    display: none;
+  }
+}
+
+@media(min-width: 767px) {
+  .noneMobile {
+    display: none;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .benefits span {
+    margin-left: .5rem;
+  }
 }

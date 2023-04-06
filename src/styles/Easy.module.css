@@ -58,3 +58,32 @@
     background: #C9C9C9;
     margin: 8px auto;
 }
+
+@media(min-width: 767px) {
+  .bg_desktop {
+    margin: 8rem 18rem;
+    background: linear-gradient(180deg, rgba(234,247,235,1) 80%, rgba(255,255,255,1) 100%);
+    border-radius: .5rem;
+  }
+  .container_bureaucracy {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .bureaucracy {
+    background-color: transparent;
+  }
+  .bureaucracy_title {
+    line-height: 1;
+  }
+  .bureaucracy_subtitle {
+    width: 300px;
+  }
+  .bureaucracy_subtitle span {
+    font-weight: bold;
+  }
+  .details {
+    display: none;
+  }
+}

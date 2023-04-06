@@ -2,7 +2,7 @@ import './App.css';
 import Brokers from './components/Brokers';
 import Benefits from './components/Benefits';
 import Contracts from './components/Contracts';
-import Header from './components/HeaderMobile';
+import Header from './components/Header';
 import Home from './components/Home';
 import Premium from './components/Premium';
 import Reference from './components/Reference';

@@ -38,3 +38,21 @@
   -webkit-overflow-scrolling: touch;
   scroll-padding: 0 20%;
 }
+
+@media(min-width: 767px){
+  .title {
+    padding: 2rem 12rem;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .container_reference {
+    margin: 6rem 20rem;
+    border-radius: .5rem;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+  .refence_info {
+    margin-left: 0px;
+  }
+}

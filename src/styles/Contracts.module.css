@@ -64,3 +64,15 @@
 .activeIndicator {
   background-color: #3e5e3f;
 }
+
+@media(min-width: 767px) {
+  .contracts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contractsWrapper {
+    justify-content: center;
+    gap: 2rem;
+  }
+}

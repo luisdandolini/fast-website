@@ -29,7 +29,7 @@
 }
 
 .telephone {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   padding-bottom: 1rem;
   font-weight: 600;
 }
@@ -41,4 +41,29 @@
 .email {
   margin-left: 1rem;
   padding-top: 1rem;
+}
+
+@media(min-width: 767px) {
+  .info_footer {
+    gap: 20rem;
+  }
+  .container_img img  {
+    width: 80px;
+    height: 80px;
+  }
+  .container_address {
+    display: flex;
+    margin-bottom: .5rem;
+  }
+  .address {
+    margin-left: .2rem;
+  }
+  .container_email {
+    display: flex;
+    align-items: center;
+  }
+  .email {
+    margin-left: .2rem;
+    padding-top: 0px;
+  }
 }
