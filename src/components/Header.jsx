@@ -22,7 +22,9 @@ function HeaderMobile(props) {
         <NavbarBrand href="/" className="me-auto">
           <img src='/logo_fast_nova_cor.png' alt='Logo Fast Sales' className={styles.logo}></img>
         </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="me-2" />
+        <NavbarToggler onClick={toggleNavbar} className={styles.me_2}>
+          <img src='/menuburger.png' alt='Custom Hamburger Icon' className={styles.customHamburger} />
+        </NavbarToggler>
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>

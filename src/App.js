@@ -9,6 +9,7 @@ import Reference from './components/Reference';
 import Doubts from './components/Doubts';
 import Footer from './components/Footer';
 import Easy from './components/Easy';
+import Plans from './components/Plans';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Contracts />
         <Premium />
         <Benefits />
+        <Plans />
         <Easy />
         <Brokers />
         <Reference />

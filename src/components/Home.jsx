@@ -1,11 +1,34 @@
 import styles from '../styles/Home.module.css';
 import Icon from '@mdi/react';
 import { mdiArrowDown } from '@mdi/js';
+import api from '../services/api';
+import { useEffect, useState } from 'react';
 
 const Home = () => {
+  const [totalBrokers, setTotalBrokers] = useState(0);
+  const [number, setNumber] = useState(0)
+
+  useEffect(() => {
+    api
+      .get('/api/public/get-count')
+      .then((response) => {
+        setTotalBrokers(parseInt(response.data.brokers) + parseInt(response.data.real_estates))
+      })
+  }, []);
+
+  useEffect(() => {
+    if(number !== totalBrokers) {
+      setTimeout(() => {
+        setNumber(number + 1)
+      }, 1.2)
+    } else {
+      setNumber(number)
+    }
+  }, [totalBrokers, number])
+
   return(
     <section className={styles.container_home}>
-      <h1 className={styles.container_home_title}>Venda seus imóveis em parceria com 1737 corretores</h1>
+      <h1 className={styles.container_home_title}>Venda seus imóveis em parceria com <br />{number} corretores</h1>
 
       <button>Quero me tornar Premium</button>
 

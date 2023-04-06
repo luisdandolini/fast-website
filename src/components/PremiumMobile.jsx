@@ -1,23 +1,6 @@
 import styles from '../styles/PremiumMobile.module.css';
 import { useState } from 'react';
-
-const containersData = [
-  {
-    title: 'Mais produtos na carteira',
-    text: 'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt',
-    backgroundUrl: '/banner_venda.jpg',
-  },
-  {
-    title: 'Mais benefícios para você',
-    text: 'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt',
-    backgroundUrl: '/banner_carteira.jpg',
-  },
-  {
-    title: 'Mais benefícios para você5',
-    text: 'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt',
-    backgroundUrl: '/banner_leads.jpg',
-  },
-];
+import premium from '../data/premium'
 
 const Premium = () => {
   const [currentContainer, setCurrentContainer] = useState(1);
@@ -26,9 +9,9 @@ const Premium = () => {
 
   const handleContainerChange = (direction) => {
     if (direction === 'left') {
-      setCurrentContainer((currentContainer % containersData.length) + 1);
+      setCurrentContainer((currentContainer % premium.length) + 1);
     } else {
-      setCurrentContainer(currentContainer === 1 ? containersData.length : currentContainer - 1);
+      setCurrentContainer(currentContainer === 1 ? premium.length : currentContainer - 1);
     }
   };
 
@@ -48,7 +31,7 @@ const Premium = () => {
     <section className={styles.premium}>
       <h1 className={styles.title}>Motivos para ser Premium</h1>
 
-      {containersData.map((container, index) => (
+      {premium.map((container, index) => (
         <div
           key={index}
           className={currentContainer === index + 1 ? styles.container : styles.container_none}
@@ -59,7 +42,7 @@ const Premium = () => {
           <div className={styles.bg} style={{ backgroundImage: `url(${container.backgroundUrl})` }}></div>
           <div className={styles.container_text}>
             <div className={styles.counter}>
-              {containersData.map((_, index) => (
+              {premium.map((_, index) => (
                 <span
                   key={index}
                   className={currentContainer === index + 1 ? styles.active : ""}

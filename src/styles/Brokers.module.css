@@ -29,7 +29,6 @@
   width: 250px;
   height: 250px;
   border-radius: .5rem;
-  margin-top: 1rem;
 }
 
 .title {
@@ -43,12 +42,39 @@
   color: #3e5e3f;
   font-weight: 500;
   padding-right: 2.4rem;
-  padding-top: 2rem;
   margin-bottom: .5rem;
+}
+
+.profession {
+  padding-right: 6rem;
 }
 
 .broker_text {
   width: 250px;
+  margin-top: 2rem;
+}
+
+.link {
+  display: flex;
+  padding-right: 5rem;
+  gap: 1rem;
+  color: #3e5e3f;
+  text-decoration: none;
+}
+
+.link span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.link img {
+  width: 32px;
+  height: 32px;
 }
 
 @media(min-width: 767px) {
@@ -59,6 +85,5 @@
   }
   .brokersWrapper {
     justify-content: center;
-    gap:2rem;
   }
 }

@@ -1,0 +1,161 @@
+.container_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.corretor {
+  width: 120px;
+  background-color: green;
+  color: #fff;
+  border-radius: .5rem;
+  border: none;
+  padding: .8rem 1rem;
+}
+
+.imobiliaria {
+  width: 120px;
+  background-color: gray;
+  color: #fff;
+  border-radius: .5rem;
+  border: none;
+  padding: .8rem 1rem;
+}
+
+.title {
+  text-align: center;
+  padding: 6rem 2rem 2rem 2rem;
+  font-weight: bold;
+}
+
+.comparison_table {
+  table-layout: fixed;
+  width: 93%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.75rem;
+  margin-left: 1rem;
+}
+
+.comparison_table th,
+.comparison_table td {
+  padding: 0.5rem;
+}
+
+.comparison_table th:first-child {
+  border: 0;
+}
+
+.comparison_table th:nth-child(2n) {
+  box-shadow: 0 0 2rem hsla(0, 0%, 0%, 0.15);
+}
+
+.comparison_table th:nth-child(2n),
+.comparison_table td:nth-child(2n) {
+  position: relative;
+  background: #fff;
+  text-align: center;
+}
+
+.comparison_table td:not(:first-child) {
+  text-align: center;
+}
+
+.check,
+.no_check {
+  width: 1rem;
+}
+
+.detail_right {
+  border-right: 1px solid #ddd;
+}
+
+.detail_bottom {
+  border-bottom: 1px solid #ddd;
+
+}
+
+.free {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: green;
+}
+
+.installments,
+.dollar {
+  font-weight: 600;
+  color: green;
+  margin-left: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.align {
+  text-align: left !important;
+}
+
+.space,
+.premium {
+  margin-left: 1rem !important;
+}
+
+.free_title,
+.premium {
+  font-size: 1rem;
+  font-weight: 600;
+  color: green;
+}
+
+.container_button_free {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.1rem;
+}
+
+.container_button_free button {
+  border: none;
+  background-color: grey;
+  color: #FFFFFF;
+  padding: .5rem .9rem;
+  border-radius: .5rem;
+}
+
+.container_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.container_button button {
+  border: none;
+  background-color: green;
+  color: #FFFFFF;
+  padding: .5rem .9rem;
+  border-radius: .5rem;
+}
+
+@media (min-width: 60rem) {
+  .comparison_table {
+    font-size: 1rem;
+  }
+  .comparison_table th,
+  .comparison_table td {
+    padding: 1.5rem 2rem;
+  }
+  .installments,
+  .dollar {
+    font-weight: 600;
+    color: green;
+  }
+  .title_premium {
+    text-align: center;
+  }
+  .align {
+    text-align: center !important;
+  }
+}

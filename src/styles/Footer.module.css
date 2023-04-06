@@ -34,13 +34,22 @@
   font-weight: 600;
 }
 
+.container_address {
+  display: flex;
+}
+
 .address {
   margin-left: 1rem;
 }
 
+.container_email {
+  display: flex;
+  align-items: center;
+  margin-top: .5rem;
+}
+
 .email {
   margin-left: 1rem;
-  padding-top: 1rem;
 }
 
 @media(min-width: 767px) {
