@@ -1,0 +1,66 @@
+.contracts {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+  overflow-x: auto;
+}
+
+.contractsWrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding: 0 20%;
+  gap: 1rem;
+}
+
+.container_contracts {
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background: #f5f4f4;
+  width: 270px;
+  height: 110px;
+  border-radius: 5px;
+  margin-top: 4rem;
+  padding-left: 1rem;
+}
+
+.container_content {
+  width: 270px;
+}
+
+.container_content p {
+  margin-bottom: 0px;
+}
+
+.content_emphasis {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.content_text {
+  font-weight: 300;
+}
+
+
+.indicatorsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.activeIndicator {
+  background-color: #3e5e3f;
+}

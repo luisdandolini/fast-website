@@ -17,7 +17,7 @@ function HeaderMobile(props) {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div>
+    <div className={styles.container_header}>
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="me-auto">
           <img src='/logo_fast_nova_cor.png' alt='Logo Fast Sales' className={styles.logo}></img>

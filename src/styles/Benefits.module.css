@@ -1,0 +1,48 @@
+.container_benefits {
+  height: 1600px;
+  background: linear-gradient(93deg, rgba(234,247,235,1) 0%, rgba(255,255,255,1) 100%);
+  margin-top: 4rem;
+}
+
+.title {
+  text-align: center;
+  padding: 3rem 2rem;
+  font-weight: bold;
+}
+
+.benefits {
+  padding: 0 2.5rem 4rem 2.5rem;
+}
+
+.benefits_title {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.benefits span {
+  color: #3e5e3f;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.benefits_description {
+  margin-left: 0.8rem;
+  margin-top: 0.5rem;
+  padding-right: 2rem;
+}
+
+.container_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.premium {
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: .5rem;
+  color: #fff;
+  background-color: #3e5e3f;
+}

@@ -1,0 +1,23 @@
+.circularProgressBar {
+  display: inline-block;
+}
+
+.circularProgressBarBackground,
+.circularProgressBarProgress {
+  fill: none;
+}
+
+.circularProgressBarBackground {
+  stroke: #eee;
+}
+
+.circularProgressBarProgress {
+  stroke: #3e5e3f;
+  stroke-linecap: round;
+}
+
+.circularProgressBarText {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #333;
+}

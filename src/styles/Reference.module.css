@@ -1,0 +1,40 @@
+.container_reference {
+  height: 250px;
+  background-color: rgba(234,247,235,1);
+  margin-top: 6rem;
+}
+
+.title {
+  text-align: center;
+  padding: 2rem 3rem;
+  font-weight: bold;
+}
+
+.refence_info {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-left: 3rem;
+}
+
+.reference {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  width: 150px;
+  height: 70px;
+  border-radius: .5rem;
+}
+
+.reference img {
+  width: 80px;
+}
+
+.wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding: 0 20%;
+}

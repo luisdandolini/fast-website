@@ -8,7 +8,7 @@
 
 .container_home_title {
   text-align: center;
-  padding: 4rem 3rem 1rem 3rem;
+  padding: 4rem 2rem 1rem 2rem;
   font-weight: 500;
   font-size: 2rem;
   color: #282828;
@@ -35,16 +35,16 @@
   top: 398px;
 }
 
-.rounded_second_rectangle {
+/* .rounded_second_rectangle {
   border-radius: 32px;
   width: 190px;
   height: 146px;
   background-color: #F6F6F6;
   position: absolute;
-  right: -128px;
+  right: -150px;
   top: 150px;
   rotate: 223deg;
-}
+} */
 
 .arrow {
   position: relative;

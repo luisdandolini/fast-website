@@ -1,0 +1,57 @@
+.title {
+  text-align: center;
+  padding: 6rem 2rem 2rem 2rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.circle {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bureaucracy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F0F0F0;
+  padding: 2rem 0 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.container_bureaucracy {
+  display: flex;
+  align-items: center;
+}
+
+.bureaucracy_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: green;
+  margin-left: .5rem;
+  margin-bottom: 0px;
+}
+
+.bureaucracy_subtitle {
+  font-size: .8rem;
+  margin-bottom: 0px;
+}
+
+.details {
+  content: "";
+    display: block;
+    width: 320px;
+    height: 2px;
+    background: #C9C9C9;
+    margin: 8px auto;
+}
