@@ -9,11 +9,11 @@ const Broker = ({ image, name, text, profession, link }) => {
       <img src={image} alt={name} />
       <p className={styles.broker_text}>
         <span>
-          <Icon path={mdiFormatQuoteOpen} size={1} color={'#3e5e3f'}/>
+          <Icon path={mdiFormatQuoteOpen} size={.7} color={'#3e5e3f'}/>
         </span>
         {text}
         <span>
-          <Icon path={mdiFormatQuoteClose} size={1} />
+          <Icon path={mdiFormatQuoteClose} size={.7} color={'#3e5e3f'}/>
         </span>
       </p>
       <p className={styles.broker_name}>{name}</p>

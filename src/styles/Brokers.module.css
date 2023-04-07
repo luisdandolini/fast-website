@@ -12,17 +12,16 @@
 }
 
 .container_broker {
-  height: 560px;
+  height: 530px;
   width: 330px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   border: 2px solid #eae6e6;
   border-radius: 1rem;
   box-shadow: #F0F0F0 6px 6px 6px;
   padding: 2rem;
-  margin-left: 2rem;
+  margin-left: 2rem
 }
 
 .container_broker img {
@@ -43,15 +42,19 @@
   font-weight: 500;
   padding-right: 2.4rem;
   margin-bottom: .5rem;
+  font-size: .9rem;
 }
 
 .profession {
   padding-right: 6rem;
+  font-size: .9rem;
 }
 
 .broker_text {
-  width: 250px;
-  margin-top: 2rem;
+  width: 255px;
+  height: 100px;
+  margin-top: 1.5rem;
+  font-size: .9rem;
 }
 
 .link {
