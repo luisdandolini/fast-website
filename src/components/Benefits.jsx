@@ -14,7 +14,7 @@ const Benefits = () => {
           <div>
             {benefistListColumnFirst.map((benefitFirst, index) => (
               <div className={styles.benefits} key={index}>
-                <div>
+                <div className={styles.container_columns}>
                   <Icon path={benefitFirst.icon} size={2} color={'#3e5e3f'} />
                   <span>{benefitFirst.title}</span>
                   <p className={styles.description}>{benefitFirst.description}</p>
@@ -26,7 +26,7 @@ const Benefits = () => {
           <div>
             {benefitsColumnSecond.map((benefitSecond, index) => (
               <div className={styles.benefits} key={index}>
-                <div>
+                <div className={styles.container_columns}>
                   <Icon path={benefitSecond.icon} size={2} color={'#3e5e3f'} />
                   <span>{benefitSecond.title}</span>
                   <p className={styles.description}>{benefitSecond.description}</p>

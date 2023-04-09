@@ -19,7 +19,7 @@ const Broker = ({ image, name, text, profession, link }) => {
       <p className={styles.broker_name}>{name}</p>
       <p className={styles.profession}>{profession}</p>
       <a className={styles.link} href={link}>
-       <span><img src="/Play video.png" alt="" /> Assita o vídeo</span>
+       <span><img src="/Play video.png" alt="" />Assista o vídeo</span>
       </a>
     </div>
   )

@@ -74,6 +74,10 @@
   background-color: #3e5e3f;
 }
 
+.teste {
+  height: 120px;
+}
+
 @media(max-width: 767px) {
   .noneDesktop {
     display: none;
