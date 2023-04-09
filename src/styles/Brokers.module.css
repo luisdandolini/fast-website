@@ -9,9 +9,6 @@
 
 .container_broker {
   scroll-snap-align: center;
-}
-
-.container_broker {
   height: 530px;
   width: 330px;
   display: flex;
@@ -88,5 +85,9 @@
   }
   .brokersWrapper {
     justify-content: center;
+    gap: 1rem;
+  }
+  .container_broker {
+    margin-left: 0px;
   }
 }
