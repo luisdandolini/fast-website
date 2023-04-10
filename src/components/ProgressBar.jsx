@@ -1,12 +1,10 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import styles from '../styles/ProgressBar.module.css';
 
-const CircularProgressBar = ({ value, maxValue, size, strokeWidth, number, isLast }) => {
+const ProgressBar = ({ value, maxValue, size, strokeWidth, number, isLast, onProgress, isActive }) => {
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const [currentValue, setCurrentValue] = useState(0);
-  const [animationTriggered, setAnimationTriggered] = useState(false);
-  const progressBarRef = useRef(null);
 
   const animateProgressBar = useCallback(() => {
     const duration = 1000; // Duração da animação em milissegundos
@@ -16,48 +14,30 @@ const CircularProgressBar = ({ value, maxValue, size, strokeWidth, number, isLas
     const intervalId = setInterval(() => {
       setCurrentValue((prevValue) => {
         const newValue = prevValue + increment;
+        if (newValue >= value) {
+          clearInterval(intervalId);
+          onProgress && onProgress(); // Chamar onProgress quando a animação estiver completa
+        }
         return newValue <= value ? newValue : value;
       });
-
-      if (currentValue >= value) {
-        clearInterval(intervalId);
-      }
     }, intervalDuration);
 
     return () => {
       clearInterval(intervalId);
     };
-  }, [currentValue, value]);
+  }, [value, onProgress]);
 
   useEffect(() => {
-    const currentProgressBar = progressBarRef.current;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !animationTriggered) {
-          setAnimationTriggered(true);
-          animateProgressBar();
-        }
-      },
-      { threshold: 1 }
-    );
-
-    if (currentProgressBar) {
-      observer.observe(currentProgressBar);
+    if (isActive) {
+      animateProgressBar();
     }
-
-    return () => {
-      if (currentProgressBar) {
-        observer.unobserve(currentProgressBar);
-      }
-    };
-  }, [animationTriggered, animateProgressBar]);
+  }, [isActive, animateProgressBar]);
 
   const progress = ((currentValue / maxValue) * 100) * (circumference / 100);
   
 
   return (
-    <div className={styles.circularProgressBar} ref={progressBarRef}>
+    <div className={styles.circularProgressBar}>
       <svg
         className={styles.circularProgressBarSvg}
         width={size}
@@ -98,4 +78,4 @@ const CircularProgressBar = ({ value, maxValue, size, strokeWidth, number, isLas
   );
 };
 
-export default CircularProgressBar;
+export default ProgressBar;

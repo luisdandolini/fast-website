@@ -1,6 +1,6 @@
 const brokers = [
   {
-    image: '/antony.jpg',
+    image: '/bruno.jpg',
     name: 'Bruno Cameschi',
     text: 'Uma das plataformas mais completas para venda de imóveis...',
     profession: '@corretordadepressão',
