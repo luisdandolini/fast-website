@@ -24,9 +24,9 @@
 }
 
 @media(min-width: 360px) and (max-width: 759px) {
-  .accordion {
+  /* .accordion {
     padding: 0 20rem;
-  }
+  } */
   .accordionHeader {
     justify-content: space-between;
   }

@@ -57,8 +57,29 @@
   }
 }
 
-@media(min-width: 760px) {
+@media(min-width: 760px) and (max-width:1199px){
   .refence_info {
     margin-left: 4rem;
+  }
+}
+
+@media(min-width: 1200px) {
+  .container_reference {
+    height: 250px;
+    background-color: rgba(234,247,235,1);
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .refence_info {
+    margin-left: 0px;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
