@@ -39,7 +39,7 @@
   scroll-padding: 0 20%;
 }
 
-@media(min-width: 767px){
+@media(min-width: 360px) and (max-width: 759px){
   .title {
     padding: 2rem 12rem;
     font-weight: 600;
@@ -54,5 +54,11 @@
   }
   .refence_info {
     margin-left: 0px;
+  }
+}
+
+@media(min-width: 760px) {
+  .refence_info {
+    margin-left: 4rem;
   }
 }

@@ -16,7 +16,7 @@
   border: none;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 360px) and (max-width: 759px) {
   .container_header {
    padding: 0 6rem;
   }

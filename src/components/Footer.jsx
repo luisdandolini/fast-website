@@ -11,7 +11,6 @@ const Footer = () => {
           <img src="/logo_fast_nova_cor.png" alt="Logo Fast Sales" />
         </div>
         <div className={styles.info}>
-    
           <p className={styles.telephone}>(47) 4108-1865</p>
           <div className={styles.container_address}>
             <span><Icon path={mdiMapMarkerOutline} size={1} color={'#3e5e3f'}/></span> 

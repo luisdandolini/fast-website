@@ -81,7 +81,7 @@
   height: 32px;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 1200px) {
   .title {
     padding: 3rem 31rem;
     font-size: 2rem;
@@ -95,3 +95,4 @@
     margin-left: 0px;
   }
 }
+

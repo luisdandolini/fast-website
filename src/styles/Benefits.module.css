@@ -78,20 +78,39 @@
   height: 120px;
 }
 
-@media(max-width: 767px) {
+@media(min-width: 360px) and (max-width: 759px) {
   .noneDesktop {
     display: none;
   }
 }
 
-@media(min-width: 767px) {
+@media(min-width: 760px) and (max-width: 1199px) {
   .noneMobile {
     display: none;
   }
   .title {
     font-size: 2rem;
   }
+  .container_benefits_desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    gap: .5rem;
+  }
+  .benefits {
+    padding: 1rem;
+  }
   .benefits span {
     margin-left: .5rem;
+  }
+}
+
+@media(min-width: 1200px) {
+  .noneMobile {
+    display: none;
+  }
+  .container_benefits_desktop {
+    gap: 10rem;
   }
 }

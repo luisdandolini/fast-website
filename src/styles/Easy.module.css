@@ -59,7 +59,7 @@
     margin: 8px auto;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 360px) and (max-width: 759px) {
   .bg_desktop {
     margin: 8rem 18rem;
     background: linear-gradient(180deg, rgba(234,247,235,1) 80%, rgba(255,255,255,1) 100%);
@@ -85,5 +85,28 @@
   }
   .details {
     display: none;
+  }
+}
+
+@media(min-width: 760px) {
+  .bg_desktop {
+    margin: 8rem 4rem;
+    background: linear-gradient(180deg, rgba(234,247,235,1) 80%, rgba(255,255,255,1) 100%);
+    border-radius: 1rem;
+  }
+  .bureaucracy_subtitle {
+    width: 350px;
+  }
+  .details {
+    width: 450px;
+  }
+  .container_bureaucracy {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 4rem;
+  }
+  .bureaucracy {
+    padding: 2rem 0rem;    
   }
 }

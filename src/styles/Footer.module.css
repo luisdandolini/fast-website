@@ -52,7 +52,7 @@
   margin-left: 1rem;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 360px) and (max-width: 759px) {
   .info_footer {
     gap: 20rem;
   }
@@ -74,5 +74,11 @@
   .email {
     margin-left: .2rem;
     padding-top: 0px;
+  }
+}
+
+@media(min-width: 760px) {
+  .info_footer {
+    gap: 10rem;
   }
 }

@@ -51,7 +51,7 @@
   top: 258px;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 360px) and (max-width: 759px) {
   .container_home {
     display: flex;
     flex-direction: column;

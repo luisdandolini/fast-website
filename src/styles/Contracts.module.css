@@ -65,7 +65,7 @@
   background-color: #3e5e3f;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 360px) and (max-width: 759px) {
   .contracts {
     display: flex;
     align-items: center;
@@ -74,5 +74,13 @@
   .contractsWrapper {
     justify-content: center;
     gap: 2rem;
+  }
+}
+
+@media(min-width: 1200px) {
+  .contracts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

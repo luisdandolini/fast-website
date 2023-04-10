@@ -18,10 +18,10 @@ const Plans = () => {
 
       <div className={styles.container_buttons}>
         <div> 
-          <button className={styles.corretor} onClick={handleClickButton1}>Corretor</button>
+          <button className={activeContent === 'corretor' ? styles.active :  ''} onClick={handleClickButton1}>Corretor</button>
         </div>
         <div>
-         <button className={styles.imobiliaria} onClick={handleClickButton2}>Imobiliária</button>
+         <button className={activeContent === 'imobiliaria' ? styles.active : ''} onClick={handleClickButton2}>Imobiliária</button>
         </div>
       </div>
 

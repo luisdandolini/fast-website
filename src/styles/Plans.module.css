@@ -1,3 +1,9 @@
+.title {
+  text-align: center;
+  padding: 6rem 2rem 2rem 2rem;
+  font-weight: bold;
+}
+
 .container_buttons {
   display: flex;
   justify-content: center;
@@ -6,16 +12,7 @@
   margin-bottom: 4rem;
 }
 
-.corretor {
-  width: 120px;
-  background-color: green;
-  color: #fff;
-  border-radius: .5rem;
-  border: none;
-  padding: .8rem 1rem;
-}
-
-.imobiliaria {
+.container_buttons button {
   width: 120px;
   background-color: gray;
   color: #fff;
@@ -24,10 +21,13 @@
   padding: .8rem 1rem;
 }
 
-.title {
-  text-align: center;
-  padding: 6rem 2rem 2rem 2rem;
-  font-weight: bold;
+.active {
+  width: 120px;
+  background-color: green !important;
+  color: #fff;
+  border-radius: .5rem;
+  border: none;
+  padding: .8rem 1rem;
 }
 
 .comparison_table {
@@ -139,7 +139,7 @@
   border-radius: .5rem;
 }
 
-@media (min-width: 60rem) {
+@media(min-width: 360px) and (max-width: 759px) {
   .comparison_table {
     font-size: 1rem;
   }
@@ -157,5 +157,42 @@
   }
   .align {
     text-align: center !important;
+  }
+}
+
+@media(min-width: 760px) and (max-width: 1199px) {
+  .comparison_table {
+    table-layout: fixed;
+    width: 93%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 0.75rem;
+    margin-left: 1.5rem;
+  }
+  .title_premium {
+    text-align: center;
+  }
+  .align {
+    text-align: center !important;
+  }
+}
+
+@media(min-width: 1200px) {
+  .comparison_table {
+    table-layout: fixed;
+    width: 95%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 0.75rem;
+    margin-left: 2rem;
+  }
+  .title_premium {
+    text-align: center;
+  }
+  .align {
+    text-align: center !important;
+  }
+  td {
+    font-size: 1rem;
   }
 }

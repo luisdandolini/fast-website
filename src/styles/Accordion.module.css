@@ -23,11 +23,23 @@
   border-top: none;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 360px) and (max-width: 759px) {
   .accordion {
     padding: 0 20rem;
   }
   .accordionHeader {
     justify-content: space-between;
+  }
+}
+
+@media(min-width: 760px) {
+  .accordionHeader {
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid;
   }
 }

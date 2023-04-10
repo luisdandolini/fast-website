@@ -47,3 +47,14 @@
   margin-right: 1rem;
   border-radius: .5rem;
 }
+
+@media(min-width: 760px) {
+  .container_premium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 3rem;
+    margin-left: 1rem;
+  }
+}
