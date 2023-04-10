@@ -3,7 +3,7 @@ import styles from '../styles/Easy.module.css';
 
 const circles = [
   {
-    value: 25,
+    value: 100,
     maxValue: 100,
     size: 100,
     strokeWidth: 5,
@@ -11,7 +11,7 @@ const circles = [
     text: 'Cadastre-se'
   },
   {
-    value: 50,
+    value: 100,
     maxValue: 100,
     size: 100,
     strokeWidth: 5,
@@ -19,7 +19,7 @@ const circles = [
     text: 'Coloque seus imóveis para parceria 50/50'
   },
   {
-    value: 75,
+    value: 100,
     maxValue: 100,
     size: 100,
     strokeWidth: 5,
@@ -56,7 +56,7 @@ const Easy = () => {
             <Circle key={circle.number} {...circle} />
           ))}
         </div>
-        <img src="/antony.jpg" alt="" />
+        <img src="/cadastre.png" alt="" />
       </div>
       <div className={styles.bureaucracy}>
         <div className={styles.container_bureaucracy}>
