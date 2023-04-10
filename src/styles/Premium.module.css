@@ -28,6 +28,10 @@
   width: 370px;
 }
 
+.container {
+  cursor: pointer;
+}
+
 .bg {
   background-position: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

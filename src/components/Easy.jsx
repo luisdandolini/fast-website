@@ -6,7 +6,7 @@ const circles = [
   {
     value: 100,
     maxValue: 100,
-    size: 100,
+    size: 70,
     strokeWidth: 5,
     number: 1,
     text: 'Cadastre-se'
@@ -14,7 +14,7 @@ const circles = [
   {
     value: 100,
     maxValue: 100,
-    size: 100,
+    size: 70,
     strokeWidth: 5,
     number: 2,
     text: 'Coloque seus imóveis para parceria 50/50'
@@ -22,7 +22,7 @@ const circles = [
   {
     value: 100,
     maxValue: 100,
-    size: 100,
+    size: 70,
     strokeWidth: 5,
     number: 3,
     text: 'Receba propostas'
@@ -30,7 +30,7 @@ const circles = [
   {
     value: 100,
     maxValue: 100,
-    size: 100,
+    size: 70,
     strokeWidth: 5,
     number: 4,
     isLast: true,
@@ -100,14 +100,18 @@ const Easy = () => {
             />
           ))}
         </div>
-        <img src={currentImage} alt="" />
-      </div>
-      <div className={styles.bureaucracy}>
-        <div className={styles.container_bureaucracy}>
-          <p className={styles.bureaucracy_title}>Sem burocracia</p>
-          <p className={styles.bureaucracy_subtitle}><span>Sem necessidade de exclusividade</span> somente autorização de venda do proprietrário</p>
+        <div className={styles.container_img}>
+          <img src={currentImage} alt="" />
         </div>
-        <div className={styles.details}></div>
+      </div>
+      <div className={styles.teste}>
+        <div className={styles.bureaucracy}>
+          <div className={styles.container_bureaucracy}>
+            <p className={styles.bureaucracy_title}>Sem burocracia</p>
+            <p className={styles.bureaucracy_subtitle}><span>Sem necessidade de exclusividade</span> somente autorização de venda do proprietrário</p>
+          </div>
+          <div className={styles.details}></div>
+        </div>
       </div>
     </section>
   )

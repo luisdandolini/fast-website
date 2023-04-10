@@ -20,11 +20,12 @@
   font-family: sans-serif;
   font-weight: bold;
   fill: #333;
+  font-size: 1.5rem;
 }
 
 .dottedLine {
   width: 3px;
-  height: 60px;
+  height: 40px;
   background-image: linear-gradient(to bottom, currentColor 50%, transparent 50%);
   background-size: 100% 6px;
   margin: 10px auto;

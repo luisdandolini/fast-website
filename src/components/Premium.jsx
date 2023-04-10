@@ -6,22 +6,16 @@ import reasons from '../data/reasons';
 
 const images = [
   '/banner_carteira.jpg',
+  '/banner_venda.jpg',
   '/banner_leads.jpg',
-  '/banner_venda.jpg'
 ];
 
 const Premium = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+  const handleClick = (index) => {
+    setCurrentImageIndex(index);
+  };
 
   const [isMobile, setIsMobile] = useState(false);
   const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
@@ -45,7 +39,7 @@ const Premium = () => {
           {reasons.map((reason, index) => (
             <div key={index} className={styles.container_content}>
               <div className={currentImageIndex === index ? styles.detail : ''}></div>
-              <div>
+              <div className={styles.container} onClick={() => handleClick(index)}>
                 <h2>{reason.title}</h2>
                 <p>{reason.description}</p>
               </div>
