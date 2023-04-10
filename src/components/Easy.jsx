@@ -50,14 +50,17 @@ const Easy = () => {
   return(
     <section className={styles.bg_desktop}>
       <h2 className={styles.title}>Veja como é fácil</h2>
-      <div className={styles.container}>
-        {circles.map(circle => (
-          <Circle key={circle.number} {...circle} />
-        ))}
+      <div className={styles.container_easy}>
+        <div className={styles.container}>
+          {circles.map(circle => (
+            <Circle key={circle.number} {...circle} />
+          ))}
+        </div>
+        <img src="/antony.jpg" alt="" />
       </div>
       <div className={styles.bureaucracy}>
         <div className={styles.container_bureaucracy}>
-          <p className={styles.bureaucracy_title}>Sem <br />burocracia</p>
+          <p className={styles.bureaucracy_title}>Sem burocracia</p>
           <p className={styles.bureaucracy_subtitle}><span>Sem necessidade de exclusividade</span> somente autorização de venda do proprietrário</p>
         </div>
         <div className={styles.details}></div>

@@ -2,6 +2,8 @@
   text-align: center;
   padding: 6rem 2rem 2rem 2rem;
   font-weight: bold;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .container {
@@ -27,13 +29,15 @@
   align-items: center;
   flex-direction: column;
   background-color: #F0F0F0;
-  padding: 2rem 0 2rem 1rem;
+  padding: 2rem 0;
   margin-top: 3rem;
 }
 
 .container_bureaucracy {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: .5rem;
 }
 
@@ -41,13 +45,13 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: green;
-  margin-left: .5rem;
   margin-bottom: 0px;
 }
 
 .bureaucracy_subtitle {
   font-size: .8rem;
   margin-bottom: 0px;
+  width: 300px;
 }
 
 .details {
@@ -59,17 +63,17 @@
     margin: 8px auto;
 }
 
-@media(min-width: 360px) and (max-width: 759px) {
+@media(min-width: 759px) and (max-width: 1119px) {
   .bg_desktop {
-    margin: 8rem 18rem;
+    margin: 8rem 4rem;
     background: linear-gradient(180deg, rgba(234,247,235,1) 80%, rgba(255,255,255,1) 100%);
     border-radius: .5rem;
   }
   .container_bureaucracy {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
   }
   .bureaucracy {
     background-color: transparent;
@@ -78,7 +82,9 @@
     line-height: 1;
   }
   .bureaucracy_subtitle {
-    width: 300px;
+    font-size: .9rem;
+    width: 400px;
+    text-align: center;
   }
   .bureaucracy_subtitle span {
     font-weight: bold;
@@ -88,14 +94,14 @@
   }
 }
 
-@media(min-width: 760px) {
+@media(min-width: 1200px) {
   .bg_desktop {
-    margin: 8rem 4rem;
-    background: linear-gradient(180deg, rgba(234,247,235,1) 80%, rgba(255,255,255,1) 100%);
-    border-radius: 1rem;
+    margin: 4rem 0rem;
+    background: linear-gradient(93deg, rgba(234,247,235,1) 0%, rgba(255,255,255,1) 100%);
   }
   .bureaucracy_subtitle {
-    width: 350px;
+    width: 400px;
+    text-align: center;
   }
   .details {
     width: 450px;
@@ -104,9 +110,13 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-left: 4rem;
   }
   .bureaucracy {
     padding: 2rem 0rem;    
+  }
+  .container_easy {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }

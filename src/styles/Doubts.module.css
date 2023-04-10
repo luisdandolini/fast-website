@@ -3,3 +3,10 @@
   padding: 6rem 2rem 2rem 2rem;
   font-weight: bold;
 }
+
+.container_accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

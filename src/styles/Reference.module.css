@@ -1,6 +1,6 @@
 .container_reference {
   height: 250px;
-  background-color: rgba(234,247,235,1);
+  background-color: #f5f4f4;
   margin-top: 6rem;
 }
 
@@ -39,14 +39,14 @@
   scroll-padding: 0 20%;
 }
 
-@media(min-width: 360px) and (max-width: 759px){
+@media(min-width: 759px) and (max-width: 1119px){
   .title {
     padding: 2rem 12rem;
     font-weight: 600;
     font-size: 2rem;
   }
   .container_reference {
-    margin: 6rem 20rem;
+    /* margin: 6rem 20rem; */
     border-radius: .5rem;
   }
   .wrapper {
@@ -57,16 +57,13 @@
   }
 }
 
-@media(min-width: 760px) and (max-width:1199px){
-  .refence_info {
-    margin-left: 4rem;
-  }
-}
-
 @media(min-width: 1200px) {
+  .title {
+    padding: 0rem;
+  }
   .container_reference {
     height: 250px;
-    background-color: rgba(234,247,235,1);
+    background-color: #f5f4f4;
     margin-top: 6rem;
     display: flex;
     align-items: center;

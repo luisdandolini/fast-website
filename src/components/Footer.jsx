@@ -9,6 +9,7 @@ const Footer = () => {
       <div className={styles.info_footer}>
         <div className={styles.container_img}>
           <img src="/logo_fast_nova_cor.png" alt="Logo Fast Sales" />
+          <div className={styles.rounded_rectangle}></div>
         </div>
         <div className={styles.info}>
           <p className={styles.telephone}>(47) 4108-1865</p>
@@ -26,6 +27,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
     </footer>
   )
 }

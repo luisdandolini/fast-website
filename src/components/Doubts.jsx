@@ -5,7 +5,7 @@ const Doubts = () => {
   return(
     <section>
       <h2 className={styles.title}>Dúvidas</h2>
-      <div>
+      <div className={styles.container_accordion}>
         <Accordion
           title="Quantos imóveis posso colocar?"
           content="Conteúdo do Accordion 1"

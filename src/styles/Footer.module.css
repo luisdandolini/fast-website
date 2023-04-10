@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: clip;
+  position: relative;
 }
 
 .info_footer {
@@ -52,7 +54,7 @@
   margin-left: 1rem;
 }
 
-@media(min-width: 360px) and (max-width: 759px) {
+@media(min-width: 759px) and (max-width: 1119px) {
   .info_footer {
     gap: 20rem;
   }
@@ -77,8 +79,26 @@
   }
 }
 
-@media(min-width: 760px) {
+@media(min-width: 1200px) {
+  .container_img img {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    top: 90px;
+  }
   .info_footer {
     gap: 10rem;
+  }
+  .rounded_rectangle {
+    border-radius: 32px;
+    width: 160px;
+    height: 250px;
+    background-color: #fff;
+    rotate: 212deg;
+    position: relative;
+    right: 44px;
+    top: 55px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 }

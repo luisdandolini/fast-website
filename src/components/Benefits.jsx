@@ -6,9 +6,12 @@ import benefitsColumnSecond from '../data/benefitsColumnSecond';
 
 const Benefits = () => {
   return (
-    <section>
+    <section className={styles.container}>
       <div className={styles.container_benefits}>
         <h1 className={styles.title}>O que você ganha sendo Fast Premium</h1>
+
+        <div className={styles.rounded_primary_rectangle}></div>
+        <div className={styles.rounded_second_rectangle}></div>
 
         <div className={`${styles.container_benefits_desktop} ${styles.noneDesktop}`}>
           <div>
@@ -45,9 +48,9 @@ const Benefits = () => {
             <p className={styles.benefits_description}>{benefit.description}</p>
           </div>
         ))}
-      </div>
-      <div className={styles.button}>
-        <button>Quero ser Premium</button>
+        <div className={styles.button}>
+          <button>Quero ser Premium</button>
+        </div>
       </div>
     </section>
   )

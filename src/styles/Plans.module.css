@@ -1,7 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   text-align: center;
   padding: 6rem 2rem 2rem 2rem;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .container_buttons {
@@ -23,7 +29,7 @@
 
 .active {
   width: 120px;
-  background-color: green !important;
+  background-color: #3e5e3f !important;
   color: #fff;
   border-radius: .5rem;
   border: none;
@@ -36,7 +42,6 @@
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 0.75rem;
-  margin-left: 1rem;
 }
 
 .comparison_table th,
@@ -108,7 +113,7 @@
 .premium {
   font-size: 1rem;
   font-weight: 600;
-  color: green;
+  color: #3e5e3f;
 }
 
 .container_button_free {
@@ -118,11 +123,16 @@
 }
 
 .container_button_free button {
+  font-size: .6rem;
   border: none;
   background-color: grey;
   color: #FFFFFF;
-  padding: .5rem .9rem;
+  padding: 1rem .9rem;
   border-radius: .5rem;
+}
+
+.container_button_free button:hover {
+  background-color: #a39a9a;
 }
 
 .container_button {
@@ -132,35 +142,19 @@
 }
 
 .container_button button {
+  font-size: .6rem;
   border: none;
-  background-color: green;
+  background-color: #3e5e3f;
   color: #FFFFFF;
-  padding: .5rem .9rem;
+  padding: 1rem .9rem;
   border-radius: .5rem;
 }
 
-@media(min-width: 360px) and (max-width: 759px) {
-  .comparison_table {
-    font-size: 1rem;
-  }
-  .comparison_table th,
-  .comparison_table td {
-    padding: 1.5rem 2rem;
-  }
-  .installments,
-  .dollar {
-    font-weight: 600;
-    color: green;
-  }
-  .title_premium {
-    text-align: center;
-  }
-  .align {
-    text-align: center !important;
-  }
+.container_button button:hover {
+  background-color: #597d5a;
 }
 
-@media(min-width: 760px) and (max-width: 1199px) {
+@media(min-width: 759px) and (max-width: 1119px) {
   .comparison_table {
     table-layout: fixed;
     width: 93%;
@@ -175,12 +169,16 @@
   .align {
     text-align: center !important;
   }
+  .comparison_table th:nth-child(2n),
+  .comparison_table td:nth-child(2n) {
+    background: none !important;
+  }
 }
 
 @media(min-width: 1200px) {
   .comparison_table {
     table-layout: fixed;
-    width: 95%;
+    width: 1000px;
     border-collapse: collapse;
     border-spacing: 0;
     font-size: 0.75rem;
@@ -193,6 +191,10 @@
     text-align: center !important;
   }
   td {
+    font-size: 1rem;
+  }
+  .container_button_free button,
+  .container_button button {
     font-size: 1rem;
   }
 }
