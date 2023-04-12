@@ -40,8 +40,6 @@ const Home = () => {
           <Icon path={mdiArrowDown} size={2} color={'#3e5e3f'}/>
         </div> */}
       </div>
-
-      <img src="/antony.jpg" alt="" />
     </section>
   )
 }

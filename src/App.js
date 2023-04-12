@@ -10,6 +10,7 @@ import Doubts from './components/Doubts';
 import Footer from './components/Footer';
 import Easy from './components/Easy';
 import Plans from './components/Plans';
+import PlansSecond from './components/PlansSecond';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Premium />
         <Benefits />
         <Plans />
+        <PlansSecond />
         <Easy />
         <Brokers />
         <Reference />

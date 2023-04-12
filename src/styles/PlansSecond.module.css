@@ -1,0 +1,147 @@
+.plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.container_free {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 880px;
+  border: 1px solid #e9e6e6;
+  border-radius: .5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container_premium {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 880px;
+  border: 1px solid #e9e6e6;
+  border-radius: .5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header_free,
+.header_premium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header_free::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 60px;
+  background-color: black;
+  margin-top: 2rem;
+}
+
+.header_premium::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 60px;
+  background-color: #3e5e3f;
+  margin-top: 2rem;
+}
+
+.container_advantage {
+  margin-bottom: 2rem;
+}
+
+.free {
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+.type {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.header_free button {
+  width: 190px;
+  height: 48px;
+  border: none;
+  border-radius: .5rem;
+  background-color: gray;
+  color: #FFF;
+}
+
+.header_premium button {
+  width: 190px;
+  height: 48px;
+  border: none;
+  border-radius: .5rem;
+  background-color: #3e5e3f;
+  color: #FFF;
+}
+
+.advantage {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+  font-weight: 600;
+}
+
+.type_advantage {
+  font-size: .9rem;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.check {
+  width: 16px;
+  margin-right: .5rem;
+}
+
+.no_type_advantage {
+  font-size: .9rem;
+  padding-left: 3rem;
+  text-decoration: line-through;
+  color: rgb(176, 176, 176);
+}
+
+.times {
+  color: #3e5e3f;
+  font-size: 1rem;
+  margin-bottom: -12px;
+  margin-right: 90px;
+}
+
+.price {
+  color: #3e5e3f;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.cents {
+  font-size: 1.5rem;
+}
+
+.teste {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+@media(min-width: 320px) and (max-width: 759px) {
+  .container_free,
+  .container_premium {
+    width: 320px;
+  }
+} 
