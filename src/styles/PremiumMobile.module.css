@@ -3,13 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 
 .title {
   text-align: center;
-  padding: 0 6rem;
-  font-weight: bold;
+  padding: 0 4rem;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .container {
@@ -25,6 +26,9 @@
 }
 
 .bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-position: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 350px;
@@ -32,12 +36,26 @@
   border-radius: 5px;
 }
 
+.container_arrow_left {
+  background-color: #FFF;
+  border-radius: 50%;
+  margin-left: 1rem;
+  opacity: .7;
+}
+
+.container_arrow_right {
+  background-color: #FFF;
+  border-radius: 50%;
+  margin-right: 1rem;
+  opacity: .7;
+}
+
 .container_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .container_text h2 {
@@ -50,13 +68,15 @@
 .container_text p {
   text-align: center;
   padding: 0 2rem;
+  margin-bottom: 0px;
+  height: 72px;
 }
 
 .counter {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .counter span {

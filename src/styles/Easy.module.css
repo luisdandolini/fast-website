@@ -1,6 +1,11 @@
+.bg_desktop {
+  background: linear-gradient(180deg, rgba(234,247,235,1) 100%, rgba(255,255,255,1) 100%);
+  margin-top: 3rem;
+}
+
 .title {
   text-align: center;
-  padding: 6rem 2rem 2rem 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   font-weight: bold;
   font-weight: 500;
   font-size: 2rem;
@@ -11,11 +16,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 }
 
 .circle {
-  width: 300px;
   display: flex;
+  align-items: baseline;
+  width: 262px;
   gap: 1rem;
 }
 
@@ -62,11 +69,11 @@
 
 .details {
   content: "";
-    display: block;
-    width: 320px;
-    height: 2px;
-    background: #C9C9C9;
-    margin: 8px auto;
+  display: block;
+  width: 320px;
+  height: 2px;
+  background: #C9C9C9;
+  margin: 8px auto;
 }
 
 .container_img img {
@@ -76,7 +83,7 @@
 @media(min-width: 759px) and (max-width: 1119px) {
   .bg_desktop {
     margin: 8rem 4rem;
-    background: linear-gradient(180deg, rgba(234,247,235,1) 80%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(234,247,235,1) 100%, rgba(255,255,255,1) 100%);
     border-radius: .5rem;
   }
   .container_bureaucracy {
@@ -118,7 +125,6 @@
 
 @media(min-width: 1200px) {
   .circle {
-    width: 500px;
     display: flex;
     gap: 1rem;
     align-items: baseline;
@@ -146,6 +152,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* padding-bottom: 3rem; */
   }
   .container_img img {
     width: 450px;

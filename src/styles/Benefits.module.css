@@ -1,17 +1,17 @@
 .container_benefits {
   background: linear-gradient(93deg, rgba(234,247,235,1) 0%, rgba(255,255,255,1) 75%);
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .title {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   font-weight: 500;
   font-size: 2rem;
 }
 
 .benefits {
-  padding: 0 2.5rem 4rem 2.5rem;
+  padding: 0 2.5rem 1rem 2.5rem;
 }
 
 .benefits_title {
@@ -27,9 +27,8 @@
 }
 
 .benefits_description {
-  margin-left: 0.8rem;
-  margin-top: 0.5rem;
-  padding-right: 2rem;
+  margin-left: 3rem;
+  font-size: .9rem;
 }
 
 .container_button {
@@ -58,6 +57,7 @@
 .description {
   width: 350px;
   font-size: .9rem;
+  padding-left: 3rem;
 }
 
 .button {
@@ -72,13 +72,23 @@
   border-radius: .5rem;
   color: #fff;
   background-color: #3e5e3f;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
-
 
 .button button:hover {
   background-color: #597d5a;
 } 
+
+.img {
+  width: 32px;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
 @media(min-width: 360px) and (max-width: 759px) {
   .noneDesktop {

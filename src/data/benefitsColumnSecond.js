@@ -1,23 +1,25 @@
-import { mdiAutorenew, mdiSchoolOutline, mdiPhone, mdiChartLine } from '@mdi/js';
-
 const benefitsColumnSecond = [
   {
-    icon: mdiAutorenew,
+    src: '/interacao.png',
+    alt: 'Ícone de interação',
     title: 'Integração com portais',
     description: 'Anuncie os imóveis da Fast em apenas um clique',
   },
   {
-    icon: mdiSchoolOutline,
+    src: '/academy.png',
+    alt: 'Ícone de academia',
     title: 'Fast Academy',
     description: 'Aulas exclusivas',
   },
   {
-    icon: mdiPhone,
+    src: '/suporte.png',
+    alt: 'Ícone de suporte',
     title: 'Suporte',
     description: 'Atendimento VIP com nossos gestores',
   },
   {
-    icon: mdiChartLine,
+    src: '/relatorio.png',
+    alt: 'Ícone de relatório',
     title: 'Relatórios',
     description: 'Reuna os dados de performance dos seus imóveis para enviar aos clientes',
   },

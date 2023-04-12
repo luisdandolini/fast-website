@@ -1,12 +1,10 @@
-import Icon from '@mdi/react';
-import { mdiFileDocumentEditOutline } from '@mdi/js';
 import styles from '../styles/Contracts.module.css';
 import contracts from '../data/contracts';
 
-const Contract = ({ size, emphasis, text }) => {
+const Contract = ({ src, alt, emphasis, text }) => {
   return (
     <div className={styles.container_contracts}>
-      <Icon path={mdiFileDocumentEditOutline} size={size} color={'#3e5e3f'}/>
+      <img src={src} alt={alt} />
       <div className={styles.container_content}>
         <p className={styles.content_emphasis}>{emphasis}</p>
         <p>{text}</p>

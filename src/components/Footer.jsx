@@ -11,7 +11,8 @@ const Footer = () => {
           <img src="/logo_fast_nova_cor.png" alt="Logo Fast Sales" />
           <div className={styles.rounded_rectangle}></div>
         </div>
-        <div className={styles.info}>
+      </div>
+      <div className={styles.info}>
           <p className={styles.telephone}>(47) 4108-1865</p>
           <div className={styles.container_address}>
             <span><Icon path={mdiMapMarkerOutline} size={1} color={'#3e5e3f'}/></span> 
@@ -26,7 +27,6 @@ const Footer = () => {
             <p className={styles.email}>administrativo@fastsaleimoveis.com.br</p>
           </div>
         </div>
-      </div>
 
     </footer>
   )

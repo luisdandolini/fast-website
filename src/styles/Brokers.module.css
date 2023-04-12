@@ -1,5 +1,5 @@
 .brokersWrapper {
-  height: 580px;
+  height: 560px;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -10,7 +10,7 @@
 .container_broker {
   scroll-snap-align: center;
   height: 530px;
-  width: 330px;
+  width: 310px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -18,7 +18,11 @@
   border-radius: 1rem;
   box-shadow: #F0F0F0 6px 6px 6px;
   padding: 2rem;
-  margin-left: 2rem
+  margin-left: 1rem;
+}
+
+.container_broker:last-child {
+  margin-right: 1rem;
 }
 
 .container_broker img {
@@ -29,8 +33,8 @@
 
 .title {
   text-align: center;
-  padding: 3rem 2rem;
-  font-weight: bold;
+  padding: 3rem 2rem 2rem 2rem;
+  font-weight: 500;
 }
 
 .broker_name {
@@ -55,11 +59,21 @@
 }
 
 .link {
-  display: flex;
-  padding-right: 5rem;
-  gap: 1rem;
+  background: none;
+  border: none;
   color: #3e5e3f;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
   text-decoration: none;
+}
+
+.link img {
+  width: 32px;
+  height: 32px;
 }
 
 .link:hover {
@@ -70,15 +84,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.link a {
-  text-decoration: none;
-}
-
-.link img {
-  width: 32px;
-  height: 32px;
 }
 
 @media(min-width: 1200px) {

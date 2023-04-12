@@ -22,8 +22,8 @@ function App() {
         <Premium />
         <Benefits />
         <Plans />
-        <PlansSecond />
         <Easy />
+        <PlansSecond />
         <Brokers />
         <Reference />
         <Doubts />

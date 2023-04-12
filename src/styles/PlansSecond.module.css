@@ -1,3 +1,37 @@
+.container_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.container_buttons button {
+  width: 120px;
+  background-color: gray;
+  color: #fff;
+  border-radius: .5rem;
+  border: none;
+  padding: .8rem 1rem;
+}
+
+.container_buttons button:hover {
+  background-color: #979090;
+}
+
+.active {
+  width: 120px;
+  background-color: #3e5e3f !important;
+  color: #fff;
+  border-radius: .5rem;
+  border: none;
+  padding: .8rem 1rem;
+}
+
+.active:hover {
+  background-color: #597d5a !important;
+}
+
 .plans {
   display: flex;
   justify-content: center;
@@ -11,26 +45,63 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;
+  margin-bottom: 1rem;
 }
 
 .container_free {
   display: flex;
   flex-direction: column;
   width: 370px;
-  height: 880px;
+  height: 780px;
   border: 1px solid #e9e6e6;
   border-radius: .5rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.container_premium {
+.container_premium_anual {
   display: flex;
   flex-direction: column;
   width: 370px;
-  height: 880px;
+  height: 790px;
+  border: 1px solid #e9e6e6;
+  border-radius: .5rem;
+  position: relative;
+}
+
+.container_premium_trimestral {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 840px;
   border: 1px solid #e9e6e6;
   border-radius: .5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position:relative;
+}
+
+.container_premium_anual::before {
+  background-image: url('../../public/anual.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right:-18px;
+  top: 10px;
+  width: 90px;
+  height: 80px;
+}
+
+.container_premium_trimestral::before {
+  background-image: url('../../public/trimestral.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: -18px;
+  top: 10px;
+  width: 90px;
+  height: 80px;
 }
 
 .header_free,
@@ -43,19 +114,23 @@
 .header_free::before {
   content: "";
   display: block;
-  height: 8px;
+  height: 4px;
   width: 60px;
   background-color: black;
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+.header_free button:hover {
+  background-color: #979090;
 }
 
 .header_premium::before {
   content: "";
   display: block;
-  height: 8px;
+  height: 4px;
   width: 60px;
   background-color: #3e5e3f;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .container_advantage {
@@ -65,11 +140,11 @@
 .free {
   font-size: 1.5rem;
   margin-top: .5rem;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
 }
 
 .type {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
@@ -91,9 +166,13 @@
   color: #FFF;
 }
 
+.header_premium button:hover {
+  background-color: #597d5a;
+}
+
 .advantage {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
   padding-left: 3rem;
   font-weight: 600;
 }
@@ -101,7 +180,15 @@
 .type_advantage {
   font-size: .9rem;
   padding-left: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
+  margin-bottom: .5rem;
+}
+
+.type_advantage_premium {
+  font-size: .9rem;
+  padding-left: 1.5rem;
+  margin-top: 0rem;
+  margin-bottom: .8rem;
 }
 
 .check {
@@ -114,6 +201,7 @@
   padding-left: 3rem;
   text-decoration: line-through;
   color: rgb(176, 176, 176);
+  margin-bottom: .5rem;
 }
 
 .times {
@@ -125,7 +213,7 @@
 
 .price {
   color: #3e5e3f;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1.2rem;
 }
 
@@ -133,15 +221,43 @@
   font-size: 1.5rem;
 }
 
-.teste {
-  display: flex;
-  align-items: center;
-  margin-left: 1.5rem;
+.details_free {
+  text-align: center;
+  background: linear-gradient(93deg, rgba(244,244,244,1) 50%, rgba(255,255,255,1) 100%);
+  padding: .6rem 4rem;
+  line-height: 1.2;
+  font-size: .9rem;
+}
+
+.details_premium {
+  text-align: center;
+  background: linear-gradient(93deg, rgba(234,247,235,1) 0%, rgba(255,255,255,1) 100%);
+  padding: .7rem 2rem;
+  line-height: 1.2;
+  font-size: .9rem;
+}
+
+.tooltip {
+  margin-left: .5rem;
 }
 
 @media(min-width: 320px) and (max-width: 759px) {
+  .container_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+  .container {
+    gap: 2rem;
+  }
   .container_free,
-  .container_premium {
+  .container_premium_anual {
     width: 320px;
+    height: 780px;
+  }
+  .container_premium_trimestral {
+    width: 340px;
   }
 } 

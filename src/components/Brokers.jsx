@@ -2,8 +2,10 @@ import styles from '../styles/Brokers.module.css';
 import Icon from '@mdi/react';
 import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js';
 import brokers from '../data/brokers';
+import VideoModal from './VideoModal';
+import { useState } from 'react';
 
-const Broker = ({ image, name, text, profession, link }) => {
+const Broker = ({ image, name, text, profession, link, onLinkClick }) => {
   return (
     <div className={styles.container_broker}>
       <img src={image} alt={name} />
@@ -18,23 +20,35 @@ const Broker = ({ image, name, text, profession, link }) => {
       </p>
       <p className={styles.broker_name}>{name}</p>
       <p className={styles.profession}>{profession}</p>
-      <a className={styles.link} href={link}>
-       <span><img src="/Play video.png" alt="" />Assista o vídeo</span>
-      </a>
+      <button className={styles.link} onClick={() => onLinkClick(link)}>
+        <span><img src="/Play video.png" alt="" />Assista o vídeo</span>
+      </button>
     </div>
-  )
-}
+  );
+};
 
 const Brokers = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [videoLink, setVideoLink] = useState('');
+
+  const openModal = (link) => {
+    setVideoLink(link);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
   return(
     <section className={styles.broker}>
       <h2 className={styles.title}>O que os corretores Premium estão falando</h2>
 
       <div className={styles.brokersWrapper}>
         {brokers.map((broker, index) => (
-          <Broker key={index} {...broker} />
+          <Broker key={index} {...broker} onLinkClick={openModal} />
         ))}
       </div>
+      {showModal && <VideoModal videoLink={videoLink} closeModal={closeModal} />}
     </section>
   )
 }

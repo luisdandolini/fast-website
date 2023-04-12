@@ -42,13 +42,14 @@ const Circle = ({ value, maxValue, size, strokeWidth, number, isLast, text, onPr
   return (
     <div className={styles.circle}>
       <ProgressBar {...{ value, maxValue, size, strokeWidth, number, isLast, onProgress, isActive }} />
-      <span>{text}</span>
+      <div className={styles.teste}>
+        <p>{text}</p>
+      </div>
     </div>
   );
 };
 
 const Easy = () => {
-  const [currentImage, setCurrentImage] = useState("/cadastre.png");
   const [completedStep, setCompletedStep] = useState(0);
   const [sectionVisible, setSectionVisible] = useState(false);
   const sectionRef = useRef(null)
@@ -75,14 +76,6 @@ const Easy = () => {
   }, []);
 
   const handleProgress = (completedStep) => {
-    const images = [
-      "/venda.png",
-      "/imovel.png",
-      "/cadastre.png",
-      "/cadastre.png",
-    ];
-
-    setCurrentImage(images[completedStep]);
     setCompletedStep(completedStep + 1);
   };
 
@@ -99,18 +92,6 @@ const Easy = () => {
               onProgress={() => handleProgress(index)}
             />
           ))}
-        </div>
-        <div className={styles.container_img}>
-          <img src={currentImage} alt="" />
-        </div>
-      </div>
-      <div className={styles.teste}>
-        <div className={styles.bureaucracy}>
-          <div className={styles.container_bureaucracy}>
-            <p className={styles.bureaucracy_title}>Sem burocracia</p>
-            <p className={styles.bureaucracy_subtitle}><span>Sem necessidade de exclusividade</span> somente autorização de venda do proprietrário</p>
-          </div>
-          <div className={styles.details}></div>
         </div>
       </div>
     </section>

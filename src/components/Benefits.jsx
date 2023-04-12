@@ -1,10 +1,14 @@
 import styles from '../styles/Benefits.module.css';
-import Icon from '@mdi/react';
 import benefitsList from '../data/benefitsList';
 import benefistListColumnFirst from '../data/benefistListColumnFirst';
 import benefitsColumnSecond from '../data/benefitsColumnSecond';
 
 const Benefits = () => {
+  function handleClick() {
+    const sectionPremium = document.getElementById("premium");
+    sectionPremium.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <section className={styles.container}>
       <div className={styles.container_benefits}>
@@ -18,8 +22,10 @@ const Benefits = () => {
             {benefistListColumnFirst.map((benefitFirst, index) => (
               <div className={styles.benefits} key={index}>
                 <div className={styles.container_columns}>
-                  <Icon path={benefitFirst.icon} size={2} color={'#3e5e3f'} />
-                  <span>{benefitFirst.title}</span>
+                  <div className={styles.column}>
+                    <img src={benefitFirst.src} alt="" className={styles.img}/>
+                    <span>{benefitFirst.title}</span>
+                  </div>
                   <p className={styles.description}>{benefitFirst.description}</p>
                 </div>
               </div>
@@ -30,8 +36,10 @@ const Benefits = () => {
             {benefitsColumnSecond.map((benefitSecond, index) => (
               <div className={styles.benefits} key={index}>
                 <div className={styles.container_columns}>
-                  <Icon path={benefitSecond.icon} size={2} color={'#3e5e3f'} />
-                  <span>{benefitSecond.title}</span>
+                  <div className={styles.column}>
+                    <img src={benefitSecond.src} alt="" className={styles.img}/>
+                    <span>{benefitSecond.title}</span>
+                  </div>
                   <p className={styles.description}>{benefitSecond.description}</p>
                 </div>
               </div>
@@ -42,14 +50,14 @@ const Benefits = () => {
         {benefitsList.map((benefit, index) => (
           <div className={`${styles.benefits} ${styles.noneMobile}`} key={index}>
             <div className={styles.benefits_title}>
-              <Icon path={benefit.icon} size={2} color={'#3e5e3f'}/>
+              <img src={benefit.src} alt={benefit.alt} className={styles.img}/>
               <span>{benefit.title}</span>
             </div>
             <p className={styles.benefits_description}>{benefit.description}</p>
           </div>
         ))}
         <div className={styles.button}>
-          <button>Quero ser Premium</button>
+          <button onClick={handleClick}>Quero ser Premium</button>
         </div>
       </div>
     </section>

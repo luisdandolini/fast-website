@@ -5,9 +5,13 @@
 
 .title {
   text-align: center;
-  padding: 6rem 2rem 2rem 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   font-weight: 500;
   font-size: 2rem;
+}
+
+.title_premium {
+  text-align: center;
 }
 
 .container_buttons {
@@ -27,6 +31,10 @@
   padding: .8rem 1rem;
 }
 
+.container_buttons button:hover {
+  background-color: #979090;
+}
+
 .active {
   width: 120px;
   background-color: #3e5e3f !important;
@@ -34,6 +42,10 @@
   border-radius: .5rem;
   border: none;
   padding: .8rem 1rem;
+}
+
+.active:hover {
+  background-color: #597d5a !important;
 }
 
 .comparison_table {
@@ -68,6 +80,11 @@
   text-align: center;
 }
 
+.comparison_table thead,
+.comparison_table thead span {
+  font-size: 1.2rem;
+}
+
 .check,
 .no_check {
   width: 1rem;
@@ -92,7 +109,7 @@
 .dollar {
   font-weight: 600;
   color: green;
-  margin-left: 1rem;
+  margin-left: .6rem;
 }
 
 .price {
@@ -102,11 +119,6 @@
 
 .align {
   text-align: left !important;
-}
-
-.space,
-.premium {
-  margin-left: 1rem !important;
 }
 
 .free_title,

@@ -1,7 +1,7 @@
 const contracts = [
-  { size: 1.8, emphasis: '+ 1000 contratos', text: 'de parceria por mês' },
-  { size: 1.5, emphasis: '+ 1000 contratos', text: 'de parceria por mês' },
-  { size: 1.5, emphasis: '+ 1000 contratos', text: 'de parceria por mês' }
+  { src: '/imoveis.png', alt: 'Ícone de imóveis' ,emphasis: '+ 200 milhões', text: 'em imóveis por mês' },
+  { src: '/interacao.png', alt: 'Ícone de interação' ,emphasis: '+ 15.000 interações', text: 'novas por mês' },
+  { src: '/parceria.png', alt: 'Ícone de parceria', emphasis: '+ 2.500 contratos', text: 'de parceria por mês' },
 ];
 
 export default contracts;

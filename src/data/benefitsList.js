@@ -1,43 +1,49 @@
-import { mdiHomeMinusOutline, mdiCalendarCheckOutline, mdiImageCheckOutline, mdiPageNextOutline, mdiAutorenew, mdiSchoolOutline, mdiPhone, mdiChartLine } from '@mdi/js';
-
 const benefitsList = [
   {
-    icon: mdiHomeMinusOutline,
+    src: '/imoveis.png',
+    alt: 'Ícone de imóveis',
     title: 'Coloque seus imóveis',
     description: 'Para venda em parceria',
   },
   {
-    icon: mdiCalendarCheckOutline,
+    src: '/7dias.png',
+    alt: 'Ícone de acesso',
     title: 'Acesso 7 dias antes',
     description: 'Veja os novos imóveis antes dos outros corretores',
   },
   {
-    icon: mdiImageCheckOutline,
+    src: '/marcadagua.png',
+    alt: `Ícone marca d'água`,
     title: 'Sem marca d`água',
     description: 'Faça o download das fotos sem marca d`água',
   },
   {
-    icon: mdiPageNextOutline,
+    src: '/site.png',
+    alt: 'Ícone site',
     title: 'Seu site',
     description: 'para venda em parceria',
   },
   {
-    icon: mdiAutorenew,
+    src: '/interacao.png',
+    alt: 'Ícone de interação',
     title: 'Integração com portais',
     description: 'Anuncie os imóveis da Fast em apenas um clique',
   },
   {
-    icon: mdiSchoolOutline,
+    src: '/academy.png',
+    alt: 'Ícone de academia',
     title: 'Fast Academy',
     description: 'Aulas exclusivas',
   },
   {
-    icon: mdiPhone,
+    src: '/suporte.png',
+    alt: 'Ícone de suporte',
     title: 'Suporte',
     description: 'Atendimento VIP com nossos gestores',
   },
   {
-    icon: mdiChartLine,
+    src: '/relatorio.png',
+    alt: 'Ícone de relatório',
     title: 'Relatórios',
     description: 'Reuna os dados de performance dos seus imóveis para enviar aos clientes',
   },

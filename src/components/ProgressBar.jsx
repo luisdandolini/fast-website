@@ -7,7 +7,7 @@ const ProgressBar = ({ value, maxValue, size, strokeWidth, number, isLast, onPro
   const [currentValue, setCurrentValue] = useState(0);
 
   const animateProgressBar = useCallback(() => {
-    const duration = 1000; // Duração da animação em milissegundos
+    const duration = 600; // Duração da animação em milissegundos
     const intervalDuration = 10; // Duração do intervalo em milissegundos
     const increment = (value / (duration / intervalDuration));
 

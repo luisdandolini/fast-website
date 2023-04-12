@@ -1,6 +1,9 @@
 import styles from '../styles/PremiumMobile.module.css';
 import { useState } from 'react';
 import premium from '../data/premium'
+import Icon from '@mdi/react';
+import { mdiChevronRight } from '@mdi/js';
+import { mdiChevronLeft } from '@mdi/js';
 
 const Premium = () => {
   const [currentContainer, setCurrentContainer] = useState(1);
@@ -39,7 +42,10 @@ const Premium = () => {
           onTouchMove={(event) => setTouchEndX(event.targetTouches[0].clientX)}
           onTouchEnd={handleTouchEnd}
         >
-          <div className={styles.bg} style={{ backgroundImage: `url(${container.backgroundUrl})` }}></div>
+          <div className={styles.bg} style={{ backgroundImage: `url(${container.backgroundUrl})` }}>
+            <div className={styles.container_arrow_left} onClick={() => handleContainerChange('right')}><Icon path={mdiChevronLeft} size={1} className={styles.teste}/></div>
+            <div className={styles.container_arrow_right} onClick={() => handleContainerChange('left')}><Icon path={mdiChevronRight} size={1} /></div>
+          </div>
           <div className={styles.container_text}>
             <div className={styles.counter}>
               {premium.map((_, index) => (
