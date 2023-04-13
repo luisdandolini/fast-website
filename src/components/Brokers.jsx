@@ -21,7 +21,7 @@ const Broker = ({ image, name, text, profession, link, onLinkClick }) => {
       <p className={styles.broker_name}>{name}</p>
       <p className={styles.profession}>{profession}</p>
       <button className={styles.link} onClick={() => onLinkClick(link)}>
-        <span><img src="/Play video.png" alt="" />Assista o vídeo</span>
+        <span>Assista o vídeo</span><img src="/Play video.png" alt="" />
       </button>
     </div>
   );

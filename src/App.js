@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Easy from './components/Easy';
 import Plans from './components/Plans';
 import PlansSecond from './components/PlansSecond';
+import Bureaucracy from './components/Bureaucracy';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Plans />
         <Easy />
         <PlansSecond />
+        <Bureaucracy />
         <Brokers />
         <Reference />
         <Doubts />

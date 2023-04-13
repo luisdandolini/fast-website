@@ -5,9 +5,9 @@ import PremiumMobile from './PremiumMobile';
 import reasons from '../data/reasons';
 
 const images = [
-  '/banner_carteira.jpg',
-  '/banner_venda.jpg',
-  '/banner_leads.jpg',
+  '/pauta.png',
+  '/rede.png',
+  '/leads.png',
 ];
 
 const Premium = () => {

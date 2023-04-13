@@ -1,0 +1,45 @@
+.bureaucracy {
+  background-color: #f5f4f4;
+  margin-top: 3rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+.icon {
+  width: 38px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text p{
+  margin-bottom: 0px;
+  font-size: .7rem;
+}
+
+@media(min-width: 759px) and (max-width: 1119px) {
+  .container {
+    padding-bottom: 1rem;
+  }
+}
+
+@media(min-width: 1200px) {
+  .title {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+  .container {
+    padding-bottom: 2rem;
+  }
+  .text p{
+    margin-bottom: 0px;
+    font-size: 1rem;
+  }
+}

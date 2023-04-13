@@ -72,8 +72,8 @@
 }
 
 .link img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
 .link:hover {
@@ -81,9 +81,10 @@
 }
 
 .link span {
+  font-size: .8rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 @media(min-width: 1200px) {

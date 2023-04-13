@@ -38,6 +38,8 @@ const PlansSecond = () => {
 
   return(
     <section id='premium'>
+      <h1 className={styles.title}>Nossos planos</h1> 
+      
       <div className={styles.container_buttons}>
         <div> 
           <button className={activeContent === 'corretor' ? styles.active :  ''} onClick={handleClickButton1}>Corretor</button>
