@@ -7,12 +7,16 @@ const Doubts = () => {
       <h2 className={styles.title}>Dúvidas</h2>
       <div className={styles.container_accordion}>
         <Accordion
-          title="Quantos imóveis posso colocar?"
-          content="Conteúdo do Accordion 1"
+          title="Para colocar meus imóveis, preciso ter exclusividade?"
+          content="Não, apenas comprovação que você tem autorização do proprietário para trabalhar este imóvel."
         />
         <Accordion
-          title="Quantos imóveis posso colocar?"
-          content="Conteúdo do Accordion 2"
+          title="A Fast fica com alguma parte da comissão?"
+          content="Não, a comissão é dividida entre o corretor captador e o corretor que vender, 50% pra cada."
+        />
+        <Accordion
+          title="Posso anunciar onde eu quiser?"
+          content="Claro, essa é a ideia! Baixe as fotos dos imóveis e anuncie em seu site, redes sociais, portais de anúncios, grupos de Whats e onde mais quiser."
         />
       </div>
     </section>

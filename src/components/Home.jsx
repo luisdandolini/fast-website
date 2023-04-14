@@ -32,7 +32,7 @@ const Home = () => {
   return(
     <section className={styles.container_home}>
       <div className={styles.container}>
-        <h1 className={styles.container_home_title}>Venda seus imóveis <br /> em parceria com <br /> <span className={styles.number}>{number}</span> corretores</h1>
+        <h1 className={styles.container_home_title}>Venda seus imóveis <br /> em parceria com <br /></h1><h1 className={styles.title_number}> <span className={styles.number}>{number}</span> corretores</h1>
 
         <button onClick={handleClick}>Quero me tornar Premium</button>
 

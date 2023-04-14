@@ -30,10 +30,10 @@ const benefitsList = [
     description: 'Anuncie os imóveis da Fast em apenas um clique',
   },
   {
-    src: '/academy.png',
+    src: '/analytics.png',
     alt: 'Ícone de academia',
-    title: 'Fast Academy',
-    description: 'Aulas exclusivas',
+    title: 'Analytics',
+    description: 'Analise a performance dos seus imóveis',
   },
   {
     src: '/suporte.png',
