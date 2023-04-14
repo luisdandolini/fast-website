@@ -56,7 +56,9 @@ const PlansSecond = () => {
                 <p className={styles.free}>Fast Sale</p>
                 <p className={styles.details_free}>Venda imóveis de outros corretores em parceria</p>
                 <p className={styles.type}>Grátis</p>
-                <button>Acesse agora</button>
+                <button>
+                  <a style={{textDecoration: 'none', color: "#FFF"}} href="https://fastsaleimoveis.com.br/registre-se" target='blank'>Cadastre-se</a> 
+                </button>
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage} data-tip="Texto do tooltip">Vantagens</p>

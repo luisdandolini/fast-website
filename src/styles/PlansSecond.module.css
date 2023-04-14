@@ -15,7 +15,7 @@
 
 .container_buttons button {
   width: 120px;
-  background-color: gray;
+  background-color: #c6c0c0;
   color: #fff;
   border-radius: .5rem;
   border: none;
@@ -249,6 +249,9 @@
 }
 
 @media(min-width: 320px) and (max-width: 759px) {
+  .title {
+    padding: 3rem 2rem 0rem 2rem;
+  }
   .container_buttons {
     display: flex;
     justify-content: center;

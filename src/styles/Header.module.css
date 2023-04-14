@@ -1,23 +1,96 @@
 .container_header {
-  padding-left: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 
 .logo {
-  width: 42px;
+  width: 100px;
+  margin-left: 3rem;
 }
 
-.customHamburger {
-  width: 20px;
-  height: 20px;
-  border: none;
+.login {
+  text-decoration: none;
+  color: #3e5e3f; 
+  border: 1px solid #3e5e3f;
+  border-radius: 2rem;
+  padding: .2rem .7rem;
+  font-size: .9rem;
+  margin-right: .5rem;
 }
 
-.me_2 {
-  border: none;
+.login:hover {
+  background-color: #3e5e3f;
+  color: #FFF;
 }
 
-@media(min-width: 759px) and (max-width: 1119px) {
-  .container_header {
-   padding: 0 6rem;
-  }
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 3rem;
+  cursor: pointer;
+
+}
+
+.details {
+  background-color: #3e5e3f;
+  border-radius: 4px;
+  display: block;
+  height: 2px;
+  margin: 4px 0 4px -3px;
+  width: 22px;
+}
+
+.menu_itens {
+  position: absolute;
+  background-color: #FFF;
+  right: 44px;
+  z-index: 100;
+  top: 58px;
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.links {
+  padding: .5rem 1rem;
+  margin-bottom: .5rem;
+}
+
+.links li {
+  list-style-type: none;
+  font-size: .9rem;
+  margin-bottom: .5rem;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.links li a:hover {
+  color: #3e5e3f;
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+}
+
+.icon {
+  margin-right: 10px !important;
+  margin-top: 10px !important;
+}
+
+.overlay{
+  position:fixed;
+  z-index:99;
+  top:60px;
+  bottom:0;
+  right:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.7);
 }

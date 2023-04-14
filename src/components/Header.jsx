@@ -1,45 +1,49 @@
 import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Header.module.css';
+import Icon from '@mdi/react';
+import { mdiClose } from '@mdi/js';
 
-function HeaderMobile(props) {
-  const [collapsed, setCollapsed] = useState(true);
+function HeaderMobile() {
+  const [openMenu, setOpenMenu] = useState(false)
 
-  const toggleNavbar = () => setCollapsed(!collapsed);
+  const handleToggle = () => setOpenMenu(!openMenu);
 
   return (
     <div className={styles.container_header}>
-      <Navbar color="faded" light>
-        <NavbarBrand href="/" className="me-auto">
-          <img src='/logo_fast_nova_cor.png' alt='Logo Fast Sales' className={styles.logo}></img>
-        </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className={styles.me_2}>
-          <img src='/menuburger.png' alt='Custom Hamburger Icon' className={styles.customHamburger} />
-        </NavbarToggler>
-        <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
+        <img src='/Fast Sale Horizontal.png' alt='Logo Fast Sales' className={styles.logo}></img>
+        <div className={styles.menu}>
+          <a className={styles.login} href="https://fastsaleimoveis.com.br/login" target='blank'>
+            Login
+          </a>
+
+          <div onClick={handleToggle} className={styles.toggle}>
+            <span className={styles.details}></span>
+            <span className={styles.details}></span>
+            <span className={styles.details}></span>
+
+            {openMenu && 
+            <>
+              <div  className={styles.menu_itens}>
+                <div className={styles.close}>
+                  <Icon path={mdiClose} size={.9} className={styles.icon}/>
+                </div>
+                <ul className={styles.links}>
+                  <li><a href="https://fastsaleimoveis.com.br/registre-se" target='blank'>Cadastre-se</a></li>
+                  <li><a href="https://fastsaleimoveis.com.br/login" target='blank'>Entrar</a></li>
+                  <hr />
+                  <li><a href="https://fastsaleimoveis.com.br/politicas" target='blank'>Políticas e termos de uso</a></li>
+                  <li><a href="https://api.whatsapp.com/send/?phone=554741081865&text&type=phone_number&app_absent=0" target='blank'>Ajuda</a></li>
+                </ul>
+              </div>
+              <div className={styles.overlay}></div>
+              </>
+            }
+          </div>
+        </div>
     </div>
   );
 }
 
 export default HeaderMobile;
+

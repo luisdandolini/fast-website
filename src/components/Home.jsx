@@ -1,28 +1,28 @@
 import styles from '../styles/Home.module.css';
 import api from '../services/api';
 import { useEffect, useState } from 'react';
+import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
-  const [totalBrokers, setTotalBrokers] = useState(0);
-  const [number, setNumber] = useState(0)
+
+  const [isMobile, setIsMobile] = useState(false);
+  const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
+  const [properties, setProperties] = useState(0)
+  const formattedValue = parseFloat(properties / 100000000000).toLocaleString("pt-BR", { maximumSignificantDigits: 2 }).toLocaleString("pt-BR", { minimumSignificantDigits: 1 });
+
+  useEffect(() => {
+    setIsMobile(isMobileQuery);
+  }, [isMobileQuery]);
 
   useEffect(() => {
     api
       .get('/api/public/get-count')
       .then((response) => {
-        setTotalBrokers(parseInt(response.data.brokers) + parseInt(response.data.real_estates))
+        console.log(response)
+        setProperties(response.data.properties);
       })
   }, []);
 
-  useEffect(() => {
-    if(number !== totalBrokers) {
-      setTimeout(() => {
-        setNumber(number + 1)
-      }, 1.2)
-    } else {
-      setNumber(number)
-    }
-  }, [totalBrokers, number])
 
   function handleClick() {
     const sectionPremium = document.getElementById("premium");
@@ -32,9 +32,17 @@ const Home = () => {
   return(
     <section className={styles.container_home}>
       <div className={styles.container}>
-        <h1 className={styles.container_home_title}>Venda seus imóveis <br /> em parceria com <br /></h1><h1 className={styles.title_number}> <span className={styles.number}>{number}</span> corretores</h1>
+        <h1 className={styles.container_home_title}>
+         <span className={styles.span}>
+          Acesse nossa <span className={isMobile ? styles.none : ''}>pauta com mais</span> 
+          <img className={styles.your} src='/sua.png' alt='Ilustração palavra SUA'></img>
+          <img className={styles.risco} src='/risco.png' alt='Detalhe risco'></img>
+        </span>  
+         <span className={!isMobile ? styles.none : ''}>pauta com mais</span> de R${formattedValue} bilhões em imóveis
+        </h1>
 
-        <button onClick={handleClick}>Quero me tornar Premium</button>
+
+        <button onClick={handleClick}>Quero ser Fast</button>
 
         <div className={styles.rounded_rectangle}></div>
         <div className={styles.rounded_primary_rectangle}></div>

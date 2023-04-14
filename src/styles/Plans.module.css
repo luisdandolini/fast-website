@@ -134,13 +134,13 @@
   margin-top: 2.1rem;
 }
 
-.container_button_free button {
-  font-size: .6rem;
-  border: none;
-  background-color: grey;
-  color: #FFFFFF;
-  padding: 1rem .9rem;
+.container_buttons button {
+  width: 120px;
+  background-color: #c6c0c0;
+  color: #fff;
   border-radius: .5rem;
+  border: none;
+  padding: .8rem 1rem;
 }
 
 .container_button_free button:hover {

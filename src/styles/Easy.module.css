@@ -82,7 +82,7 @@
 
 @media(min-width: 759px) and (max-width: 1119px) {
   .bg_desktop {
-    margin: 8rem 4rem;
+    margin: 4rem 4rem;
     background: linear-gradient(180deg, rgba(234,247,235,1) 100%, rgba(255,255,255,1) 100%);
     border-radius: .5rem;
   }

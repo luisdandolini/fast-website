@@ -12,6 +12,7 @@ import Easy from './components/Easy';
 import Plans from './components/Plans';
 import PlansSecond from './components/PlansSecond';
 import Bureaucracy from './components/Bureaucracy';
+import Partnership from './components/Partnership';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Home />
         <Contracts />
         <Premium />
+        <Partnership />
         <Benefits />
         <Plans />
         <Easy />

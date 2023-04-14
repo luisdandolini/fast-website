@@ -1,5 +1,5 @@
 .container_footer {
-  height: 250px;
+  height: 330px;
   margin-top: 4rem;
   background-color: #f5f4f4;
   display: flex;
@@ -19,8 +19,8 @@
 }
 
 .container_img img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .info {
@@ -59,12 +59,17 @@
 .nets {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-top: .5rem;
+  gap: 1rem;
+  margin-top: -12px;
 }
 
 .img {
-  width: 24px;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.none {
+  display: none;
 }
 
 @media(min-width: 759px) and (max-width: 1119px) {
@@ -121,26 +126,26 @@
     z-index: 1;
     width: 100px;
     height: 100px;
-    top: 90px;
+    top: 150px;
   }
   .info_footer {
     gap: 10rem;
   }
   .rounded_rectangle {
     border-radius: 32px;
-    width: 160px;
-    height: 250px;
+    width: 190px;
+    height: 290px;
     background-color: #fff;
     rotate: 212deg;
     position: relative;
-    right: 44px;
-    top: 55px;
+    right: 64px;
+    top: 90px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   .nets {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: .5rem;
   }
   .img {

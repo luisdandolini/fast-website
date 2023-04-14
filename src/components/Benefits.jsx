@@ -14,9 +14,6 @@ const Benefits = () => {
       <div className={styles.container_benefits}>
         <h1 className={styles.title}>O que você ganha sendo Fast Premium</h1>
 
-        <div className={styles.rounded_primary_rectangle}></div>
-        <div className={styles.rounded_second_rectangle}></div>
-
         <div className={`${styles.container_benefits_desktop} ${styles.noneDesktop}`}>
           <div>
             {benefistListColumnFirst.map((benefitFirst, index) => (

@@ -11,6 +11,7 @@ const Bureaucracy = () => {
           <p>somente autorização de venda do proprietário</p>
         </div>
       </div>
+      <div className={styles.doc}></div>
     </section>
   )
 }
