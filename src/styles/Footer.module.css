@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
   overflow-y: clip;
   position: relative;
 }
@@ -55,7 +56,22 @@
   margin-left: 1rem;
 }
 
+.nets {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: .5rem;
+}
+
+.img {
+  width: 24px;
+}
+
 @media(min-width: 759px) and (max-width: 1119px) {
+  .container_footer {
+    display: flex;
+    flex-direction: row;
+  }
   .info_footer {
     display: flex;
     flex-direction: row;
@@ -80,9 +96,22 @@
     margin-left: .2rem;
     padding-top: 0px;
   }
+  .nets {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: .5rem;
+  }
+  .img {
+    width: 24px;
+  }
 }
 
 @media(min-width: 1200px) {
+  .container_footer {
+    display: flex;
+    flex-direction: row;
+  }
   .info_footer {
     display: flex;
     flex-direction: row;
