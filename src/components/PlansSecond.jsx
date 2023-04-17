@@ -4,6 +4,7 @@ import { mdiInformationVariantCircle } from '@mdi/js';
 import Tooltip from '@mui/material/Tooltip';
 import api from '../services/api';
 import { useEffect, useState } from 'react';
+import Check from './../assets/check.png'
 
 const PlansSecond = () => {
   const [activeContent, setActiveContent] = useState("corretor");
@@ -62,11 +63,11 @@ const PlansSecond = () => {
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage} data-tip="Texto do tooltip">Vantagens</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Vender imóveis</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Agendar Visitas</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Enviar Propostas</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Baixar Fotos</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Analytics</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Vender imóveis</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Agendar Visitas</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Enviar Propostas</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Baixar Fotos</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Analytics</p>
                 <p className={styles.no_type_advantage}>Seu site</p>
                 <p className={styles.no_type_advantage}>Baixar fotos s/ marca d'água</p>
                 <p className={styles.no_type_advantage}>Adicionar 15 imóveis</p>
@@ -90,23 +91,23 @@ const PlansSecond = () => {
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage}>Vantagens</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Vender imóveis</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Agendar Visitas</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Enviar Propostas</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Baixar Fotos</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Analytics</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" /><b>Seu site</b>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Vender imóveis</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Agendar Visitas</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Enviar Propostas</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Baixar Fotos</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Analytics</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Seu site
                   <Tooltip title="novidade! disponível a partir de 01/05" className={styles.tooltip}>
                   <Icon path={mdiInformationVariantCircle} size={.9} />
                   </Tooltip>
                 </p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Baixar fotos s/ marca d'água</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Adicionar 15 imóveis</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Ver imóveis 7 dias antes</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Integrações com portais</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Compartilhar imóveis s/ marca d'água</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Relatórios</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Suporte</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Baixar fotos s/ marca d'água</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Adicionar 15 imóveis</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Ver imóveis 7 dias antes</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Integrações com portais</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Compartilhar imóveis s/ marca d'água</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Relatórios</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Suporte</p>
               </div>
             </div>
 
@@ -122,23 +123,23 @@ const PlansSecond = () => {
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage}>Vantagens</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Vender imóveis</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Agendar Visitas</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Enviar Propostas</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Baixar Fotos</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Analytics</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" /><b>Seu site</b>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Vender imóveis</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Agendar Visitas</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Enviar Propostas</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Baixar Fotos</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Analytics</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Seu site
                   <Tooltip title="novidade! disponível a partir de 01/05" className={styles.tooltip}>
                   <Icon path={mdiInformationVariantCircle} size={.9} />
                   </Tooltip>
                 </p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Baixar fotos s/ marca d'água</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Adicionar 15 imóveis</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Ver imóveis 7 dias antes</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Integrações com portais</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Compartilhar imóveis s/ marca d'água</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Relatórios</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Suporte</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Baixar fotos s/ marca d'água</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Adicionar 15 imóveis</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Ver imóveis 7 dias antes</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Integrações com portais</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Compartilhar imóveis s/ marca d'água</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Relatórios</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Suporte</p>
               </div>
             </div>
           </div>
@@ -157,11 +158,11 @@ const PlansSecond = () => {
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage} data-tip="Texto do tooltip">Vantagens</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Vender imóveis</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Agendar Visitas</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Enviar Propostas</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Baixar Fotos</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Analytics</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Vender imóveis</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Agendar Visitas</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Enviar Propostas</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Baixar Fotos</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Analytics</p>
                 <p className={styles.no_type_advantage}>Gestão de Corretores</p>
                 <p className={styles.no_type_advantage}>2 Corretores Premium</p>
                 <p className={styles.no_type_advantage}>Seu site</p>
@@ -187,29 +188,29 @@ const PlansSecond = () => {
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage}>Vantagens</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Vender imóveis</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Agendar Visitas</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Enviar Propostas</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Baixar Fotos</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Analytics</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Gestão de Corretores
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Vender imóveis</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Agendar Visitas</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Enviar Propostas</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Baixar Fotos</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Analytics</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Gestão de Corretores
                   <Tooltip title="novidade! disponível a partir de 01/05" className={styles.tooltip}>
                     <Icon path={mdiInformationVariantCircle} size={.9} />
                   </Tooltip>
                 </p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />2 Corretores Premium</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" /><b>Seu site</b>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />2 Corretores Premium</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Seu site
                   <Tooltip title="novidade! disponível a partir de 01/05" className={styles.tooltip}>
                   <Icon path={mdiInformationVariantCircle} size={.9} />
                   </Tooltip>
                 </p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Baixar fotos s/ marca d'água</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Adicionar 25 imóveis</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Ver imóveis 7 dias antes</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Integrações com portais</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Compartilhar imóveis s/ marca d'água</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Relatórios</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" />Suporte</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Baixar fotos s/ marca d'água</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Adicionar 25 imóveis</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Ver imóveis 7 dias antes</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Integrações com portais</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Compartilhar imóveis s/ marca d'água</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Relatórios</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Suporte</p>
               </div>
             </div>
 
@@ -225,29 +226,29 @@ const PlansSecond = () => {
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage}>Vantagens</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Vender imóveis</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Agendar Visitas</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Enviar Propostas</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Baixar Fotos</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Analytics</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Gestão de Corretores
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Vender imóveis</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Agendar Visitas</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Enviar Propostas</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Baixar Fotos</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Analytics</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Gestão de Corretores
                   <Tooltip title="novidade! disponível a partir de 01/05" className={styles.tooltip}>
                     <Icon path={mdiInformationVariantCircle} size={.9} />
                   </Tooltip>
                 </p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />2 Corretores Premium</p>
-                <p className={styles.type_advantage_premium}><img className={styles.check} src="/check.png" alt="Check" /><b>Seu site</b>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />2 Corretores Premium</p>
+                <p className={styles.type_advantage_premium}><img className={styles.check} src={Check} alt="Check" />Seu site
                   <Tooltip title="novidade! disponível a partir de 01/05" className={styles.tooltip}>
                     <Icon path={mdiInformationVariantCircle} size={.9} />
                   </Tooltip>
                 </p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Baixar fotos s/ marca d'água</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Adicionar 25 imóveis</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Ver imóveis 7 dias antes</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Integrações com portais</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Compartilhar imóveis s/ marca d'água</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Relatórios</p>
-                <p className={styles.type_advantage}><img className={styles.check} src="/check.png" alt="Check" />Suporte</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Baixar fotos s/ marca d'água</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Adicionar 25 imóveis</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Ver imóveis 7 dias antes</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Integrações com portais</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Compartilhar imóveis s/ marca d'água</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Relatórios</p>
+                <p className={styles.type_advantage}><img className={styles.check} src={Check} alt="Check" />Suporte</p>
               </div>
             </div>
           </div>

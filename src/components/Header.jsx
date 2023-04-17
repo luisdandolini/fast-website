@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Header.module.css';
 import Icon from '@mdi/react';
 import { mdiClose } from '@mdi/js';
+import Logo from './../assets/Fast Sale Horizontal.png';
 
 function HeaderMobile() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -11,7 +12,7 @@ function HeaderMobile() {
 
   return (
     <div className={styles.container_header}>
-        <img src='/Fast Sale Horizontal.png' alt='Logo Fast Sales' className={styles.logo}></img>
+        <img src={Logo} alt='Logo Fast Sales' className={styles.logo}></img>
         <div className={styles.menu}>
           <a className={styles.login} href="https://fastsaleimoveis.com.br/login" target='blank'>
             Login

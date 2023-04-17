@@ -2,6 +2,8 @@ import styles from '../styles/Home.module.css';
 import api from '../services/api';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from "react-responsive";
+import Sua from '../assets/sua.png';
+import Risco from '../assets/risco.png';
 
 const Home = () => {
 
@@ -35,8 +37,8 @@ const Home = () => {
         <h1 className={styles.container_home_title}>
          <span className={styles.span}>
           Acesse nossa <span className={isMobile ? styles.none : ''}>pauta com mais</span> 
-          <img className={styles.your} src='/sua.png' alt='Ilustração palavra SUA'></img>
-          <img className={styles.risco} src='/risco.png' alt='Detalhe risco'></img>
+          <img className={styles.your} src={Sua} alt='Ilustração palavra SUA'></img>
+          <img className={styles.risco} src={Risco} alt='Detalhe risco'></img>
         </span>  
          <span className={!isMobile ? styles.none : ''}>pauta com mais</span> de R${formattedValue} bilhões em imóveis
         </h1>

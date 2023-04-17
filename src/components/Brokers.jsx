@@ -59,6 +59,7 @@ import styles from '../styles/Brokers.module.css';
 import Icon from '@mdi/react';
 import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js';
 import brokers from '../data/brokers';
+import Play from './../assets/Play video.png';
 
 const Broker = ({ image, name, text, profession, link }) => {
   return (
@@ -76,7 +77,7 @@ const Broker = ({ image, name, text, profession, link }) => {
       <p className={styles.broker_name}>{name}</p>
       <p className={styles.profession}>{profession}</p>
       <a className={styles.link} href={link} target='blank'>
-       <span>Assista o vídeo</span><img src="/Play video.png" alt="" />
+       <span>Assista o vídeo</span><img src={Play} alt="" />
       </a>
     </div>
   )

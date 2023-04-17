@@ -90,6 +90,10 @@
   width: 1rem;
 }
 
+.no_check {
+  opacity: .2;
+}
+
 .detail_right {
   border-right: 1px solid #ddd;
 }

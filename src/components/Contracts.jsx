@@ -1,13 +1,13 @@
 import styles from '../styles/Contracts.module.css';
 import contracts from '../data/contracts';
 
-const Contract = ({ src, alt, emphasis, text }) => {
+const Contract = ({ contract }) => {
   return (
     <div className={styles.container_contracts}>
-      <img src={src} alt={alt} />
+      <img src={contract.src} alt={contract.alt} />
       <div className={styles.container_content}>
-        <p className={styles.content_emphasis}>{emphasis}</p>
-        <p>{text}</p>
+        <p className={styles.content_emphasis}>{contract.emphasis}</p>
+        <p>{contract.text}</p>
       </div>
     </div>
   )
@@ -18,7 +18,7 @@ const Contracts = () => {
     <section className={styles.contracts}>
       <div className={styles.contractsWrapper}>
         {contracts.map((contract, index) => (
-          <Contract key={index} {...contract} />
+          <Contract key={index} contract={contract} />
         ))}
       </div>
     </section>

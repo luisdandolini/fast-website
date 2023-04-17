@@ -18,6 +18,10 @@ const Doubts = () => {
           title="Posso anunciar onde eu quiser?"
           content="Claro, essa é a ideia! Baixe as fotos dos imóveis e anuncie em seu site, redes sociais, portais de anúncios, grupos de Whats e onde mais quiser."
         />
+        <Accordion
+          title="Como faço para baixar as fotos sem marca d’água?"
+          content="Você pode baixar gratuitamente as fotos COM a marca d’água da Fast Sale. Para remover esta marca d’água assine o plano Premium."
+        />
       </div>
     </section>
   )

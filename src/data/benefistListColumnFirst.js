@@ -1,24 +1,29 @@
+import Imoveis from './../assets/imoveis.png'
+import Dias from './../assets/7dias.png'
+import Marca from './../assets/marcadagua.png'
+import Site from './../assets/site.png'
+
 const benefistListColumnFirst = [
   {
-    src: '/imoveis.png',
+    src: Imoveis,
     alt: 'Ícone de imóveis',
     title: 'Coloque seus imóveis',
-    description: 'Para venda em parceria',
+    description: 'Venda em parceria',
   },
   {
-    src: '/7dias.png',
+    src: Dias,
     alt: 'Ícone de acesso',
     title: 'Acesso 7 dias antes',
     description: 'Veja os novos imóveis antes dos outros corretores',
   },
   {
-    src: '/marcadagua.png',
+    src: Marca,
     alt: `Ícone marca d'água`,
     title: "Sem marca d'água",
-    description: 'Faça o download das fotos sem marca d`água',
+    description: "Faça o download das fotos sem marca d'água",
   },
   {
-    src: '/site.png',
+    src: Site,
     alt: 'Ícone site',
     title: 'Seu site',
     description: 'para venda em parceria',

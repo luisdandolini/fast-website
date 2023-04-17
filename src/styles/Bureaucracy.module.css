@@ -69,7 +69,7 @@
     margin-right: .6rem;
   }
   .doc {
-    background-image: url('/public/docfundo.png');
+    background-image: url('../assets/docfundo.png');
     background-repeat: no-repeat;
     position: absolute;
     z-index: 2;

@@ -32,7 +32,7 @@ const Premium = () => {
 
   return (
     <section className={styles.premium}>
-      <h1 className={styles.title}>Motivos para ser Premium</h1>
+      <h1 className={styles.title}>Motivos para ser Fast</h1>
 
       {premium.map((container, index) => (
         <div

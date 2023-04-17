@@ -86,7 +86,7 @@
 }
 
 .container_premium_anual::before {
-  background-image: url('../../public/anual.png');
+  background-image: url('../assets/anual.png');
   background-size: contain;
   background-repeat: no-repeat;
   content: '';
@@ -99,7 +99,7 @@
 }
 
 .container_premium_trimestral::before {
-  background-image: url('../../public/trimestral.png');
+  background-image: url('../assets/trimestral.png');
   background-size: contain;
   background-repeat: no-repeat;
   content: '';

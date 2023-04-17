@@ -4,6 +4,9 @@ import { mdiEmailOutline } from '@mdi/js';
 import styles from '../styles/Footer.module.css';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from "react-responsive";
+import Logo from './../assets/logo_fast_nova_cor.png'
+import Instagram from './../assets/instagram.png'
+import Youtube from './../assets/youtube.png';
 
 const Footer = () => {
 
@@ -19,24 +22,24 @@ const Footer = () => {
     <footer className={styles.container_footer}>
       <div className={styles.info_footer}>
         <div className={styles.container_img}>
-          <img src="/logo_fast_nova_cor.png" alt="Logo Fast Sales" />
+          <img src={Logo} alt="Logo Fast Sales" />
           <div className={`${isMobile ? styles.nets : styles.none}`}>
             <div className={styles.container_email}>
                 <a href="https://www.instagram.com/fastsale.br/" target='blank'>
-                  <span><img className={styles.img} src="/instagram.png" alt="" /></span>
+                  <span><img className={styles.img} src={Instagram} alt="" /></span>
                 </a>
               </div>
               <div className={styles.container_email}>
                 <a href="https://www.youtube.com/@FastSale" target='blank'>
-                  <span><img className={styles.img} src="/youtube.png" alt="" /></span>
+                  <span><img className={styles.img} src={Youtube} alt="" /></span>
                 </a>
-              </div>
-              <div className={styles.container_email}>
-                <span><img className={styles.img} src="/tiktok.png" alt="" /></span>
               </div>
             </div>
           <div className={styles.rounded_rectangle}></div>
         </div>
+      </div>
+      <div>
+        Viva o jeito americano de vender imóveis.
       </div>
       <div className={styles.info}>
           <p className={styles.telephone}>(47) 4108-1865</p>
@@ -56,20 +59,17 @@ const Footer = () => {
             <div className={styles.nets}>
             <div className={styles.container_email}>
                 <a href="https://www.instagram.com/fastsale.br/" target='blank'>
-                  <span><img className={styles.img} src="/instagram.png" alt="" /></span>
+                  <span><img className={styles.img} src={Instagram} alt="" /></span>
                 </a>
               </div>
               <div className={styles.container_email}>
                 <a href="https://www.youtube.com/@FastSale" target='blank'>
-                  <span><img className={styles.img} src="/youtube.png" alt="" /></span>
+                  <span><img className={styles.img} src={Youtube} alt="" /></span>
                 </a>
-              </div>
-              <div className={styles.container_email}>
-                <span><img className={styles.img} src="/tiktok.png" alt="" /></span>
               </div>
             </div>
           </div>
-        </div>
+      </div>
 
     </footer>
   )

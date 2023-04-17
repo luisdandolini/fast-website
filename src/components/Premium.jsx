@@ -3,11 +3,14 @@ import styles from '../styles/Premium.module.css';
 import { useMediaQuery } from "react-responsive";
 import PremiumMobile from './PremiumMobile';
 import reasons from '../data/reasons';
+import Pauta from './../assets/pauta.png';
+import Rede from './../assets/rede.png';
+import Leads from './../assets/leads.jpg';
 
 const images = [
-  '/pauta.png',
-  '/rede.png',
-  '/leads.png',
+  Pauta,
+  Rede,
+  Leads,
 ];
 
 const Premium = () => {
@@ -37,7 +40,7 @@ const Premium = () => {
 
   return (
     <section>
-      <h1 className={styles.title}>Motivos para ser Premium</h1>
+      <h1 className={styles.title}>Motivos para ser Fast</h1>
 
       <div className={styles.container_premium}>
         <div className={`${styles.bg} ${activeBg ? styles.bg_active : ''}`} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}></div>
