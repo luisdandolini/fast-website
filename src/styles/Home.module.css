@@ -56,6 +56,7 @@
   position: absolute;
   right: -293px;
   top: -105px;
+  overflow-x: clip !important; /* aqui */
 }
 
 .container_home img {
