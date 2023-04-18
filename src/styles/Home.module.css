@@ -59,10 +59,10 @@
   overflow-x: clip !important; /* aqui */
 }
 
-.container_home img {
+/* .container_home img {
   width: 200px;
   height: 200px;
-}
+} */
 
 .arrow {
   position: relative;
@@ -105,6 +105,13 @@
 }
 .none {
   display: none;
+}
+
+.detail { 
+  position: relative;
+  top: -230px;
+  right: -146px;
+  width: 90px;
 }
 
 

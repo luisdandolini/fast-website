@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useMediaQuery } from "react-responsive";
 import Sua from '../assets/sua.png';
 import Risco from '../assets/risco.png';
+import Detalhe from '../assets/detail.png';
 
 const Home = () => {
 
@@ -45,9 +46,10 @@ const Home = () => {
 
 
         <button onClick={handleClick}>Quero ser Fast</button>
-
+          
         <div className={styles.rounded_rectangle}></div>
-        <div className={styles.rounded_primary_rectangle}></div>
+        <div className={!isMobile ? styles.rounded_primary_rectangle : ''}></div>
+        <img src={Detalhe} alt='Detalhe' className={isMobile ? styles.detail : styles.none}></img>
       </div>
     </section>
   )
