@@ -1,8 +1,11 @@
 import styles from "../styles/Partnership.module.css"
 import { useEffect, useState, useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 import api from "../services/api";
 
 const Partnership = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
   const [totalBrokers, setTotalBrokers] = useState(0);
   const [number, setNumber] = useState(0)
   const sectionRef = useRef(null);
@@ -47,13 +50,18 @@ const Partnership = () => {
     sectionPremium.scrollIntoView({ behavior: "smooth" });
   }
 
+  useEffect(() => {
+    setIsMobile(isMobileQuery);
+  }, [isMobileQuery]);
+
+
   return(
     <section ref={sectionRef} className={styles.partnership}>
       <h1 className={styles.container_home_title}>Venda seus imóveis em parceria <br /></h1>
       <h1 className={styles.title_number}> com <span className={styles.number}>{number}</span> <span className={styles.brokers} >corretores</span> </h1>
       
       <button onClick={handleClick} className={styles.button}>Quero ser Fast</button>
-      <div className={styles.rounded_rectangle}></div>
+      <div className={isMobile ? styles.none : styles.rounded_rectangle}></div>
       <div className={styles.rounded_primary_rectangle}></div>
     </section>
   )

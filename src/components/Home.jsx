@@ -7,7 +7,6 @@ import Risco from '../assets/risco.png';
 import Detalhe from '../assets/detail.png';
 
 const Home = () => {
-
   const [isMobile, setIsMobile] = useState(false);
   const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
   const [properties, setProperties] = useState(0)
