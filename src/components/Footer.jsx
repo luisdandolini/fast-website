@@ -38,8 +38,8 @@ const Footer = () => {
           <div className={styles.rounded_rectangle}></div>
         </div>
       </div>
-      <div>
-        Viva o jeito americano de vender imóveis.
+      <div style={{textAlign: 'center', fontSize:'20px', color: '#3e5e3f'}}> 
+        <b> Viva o jeito americano <br /> de vender imóveis.</b> 
       </div>
       <div className={styles.info}>
           <p className={styles.telephone}>(47) 4108-1865</p>

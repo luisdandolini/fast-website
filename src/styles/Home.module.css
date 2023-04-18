@@ -231,7 +231,7 @@
     font-weight: 500;
     font-size: 2rem;
     color: #282828;
-    width: 500px;
+    width: 600px;
   }
   .container_home button {
     width: 320px;
@@ -284,5 +284,13 @@
   }
   .none {
     display: none;
+  }
+  .teste1 {
+    margin-top: 1rem;
+  }
+  .teste1,
+  .teste2 {
+    color: #3e5e3f;
+    font-size: 1.2rem;
   }
 }

@@ -40,7 +40,7 @@ const Home = () => {
           <img className={styles.your} src={Sua} alt='Ilustração palavra SUA'></img>
           <img className={styles.risco} src={Risco} alt='Detalhe risco'></img>
         </span>  
-         <span className={!isMobile ? styles.none : ''}>pauta com mais</span> de R${formattedValue} bilhões em imóveis
+        <span className={!isMobile ? styles.none : ''}>pauta com mais</span> de R${formattedValue} bilhões em imóveis
         </h1>
 
 

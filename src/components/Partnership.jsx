@@ -21,7 +21,7 @@ const Partnership = () => {
     if (shouldStartCount && number !== totalBrokers) {
       setTimeout(() => {
         setNumber(number + 1);
-      }, 1.2);
+      }, 0);
     } else {
       setNumber(number);
     }

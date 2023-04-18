@@ -65,9 +65,9 @@
   border: 0;
 }
 
-.comparison_table th:nth-child(2n) {
+/* .comparison_table th:nth-child(2n) {
   box-shadow: 0 0 2rem hsla(0, 0%, 0%, 0.15);
-}
+} */
 
 .comparison_table th:nth-child(2n),
 .comparison_table td:nth-child(2n) {

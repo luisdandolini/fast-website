@@ -22,6 +22,10 @@ const Doubts = () => {
           title="Como faço para baixar as fotos sem marca d’água?"
           content="Você pode baixar gratuitamente as fotos COM a marca d’água da Fast Sale. Para remover esta marca d’água assine o plano Premium."
         />
+        <Accordion
+          title="Como faço para agendar visitas?"
+          content="Para facilitar, você pode agendar visitas e enviar propostas diretamente pela plataforma. Na página do imóvel você encontra um calendário para agendar visita com seu cliente com horário marcado"
+        />
       </div>
     </section>
   )

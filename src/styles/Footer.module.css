@@ -8,6 +8,7 @@
   flex-direction: column;
   overflow-y: clip;
   position: relative;
+  gap: 1rem;
 }
 
 .info_footer {
@@ -59,6 +60,7 @@
 .nets {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-top: -12px;
 }
@@ -104,6 +106,7 @@
   .nets {
     display: flex;
     align-items: center;
+    justify-content: initial;
     gap: 2rem;
     margin-top: .5rem;
   }
@@ -145,6 +148,7 @@
   .nets {
     display: flex;
     align-items: center;
+    justify-content: initial;
     gap: 1rem;
     margin-top: .5rem;
   }
