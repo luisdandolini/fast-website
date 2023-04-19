@@ -24,7 +24,7 @@ const Doubts = () => {
         />
         <Accordion
           title="Como faço para agendar visitas?"
-          content="Para facilitar, você pode agendar visitas e enviar propostas diretamente pela plataforma. Na página do imóvel você encontra um calendário para agendar visita com seu cliente com horário marcado"
+          content="Para facilitar, você pode agendar visitas e enviar propostas diretamente pela plataforma. Na página do imóvel você encontra um calendário para agendar visita com seu cliente com horário marcado."
         />
       </div>
     </section>

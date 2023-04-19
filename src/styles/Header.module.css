@@ -46,6 +46,7 @@
 .menu_itens {
   position: absolute;
   background-color: #FFF;
+  width: 200px;
   right: 44px;
   z-index: 100;
   top: 58px;

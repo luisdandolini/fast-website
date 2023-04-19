@@ -40,6 +40,7 @@ const PlansSecond = () => {
   return(
     <section id='premium'>
       <h1 className={styles.title}>Nossos planos</h1> 
+      <span className={styles.perfil}>Selecione o seu perfil</span>
       
       <div className={styles.container_buttons}>
         <div> 
@@ -58,7 +59,7 @@ const PlansSecond = () => {
                 <p className={styles.details_free}>Venda imóveis de outros corretores em parceria</p>
                 <p className={styles.type}>Grátis</p>
                 <button>
-                  <a style={{textDecoration: 'none', color: "#FFF"}} href="https://fastsaleimoveis.com.br/registre-se" target='blank'>Cadastre-se</a> 
+                  <a style={{textDecoration: 'none', color: "#FFF"}} href="https://fastsaleimoveis.com.br/registre-se" >Cadastre-se</a> 
                 </button>
               </div>
               <div className={styles.container_advantage}>
@@ -87,7 +88,11 @@ const PlansSecond = () => {
                   <p className={styles.times}>3x</p>
                   <p className={styles.price}>249<span className={styles.cents}>,90</span></p>
                 </div>
-                <button>Assine agora</button>
+                <button>
+                  <a href="https://fastsalesimoveis.com.br/checkout/corretor" className={styles.link_buy}>
+                    Assine agora
+                  </a>
+                </button>
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage}>Vantagens</p>
@@ -119,7 +124,11 @@ const PlansSecond = () => {
                   <p className={styles.times}>12x</p>
                   <p className={styles.price}>149<span className={styles.cents}>,90</span></p>
                 </div>
-                <button>Assine agora</button>
+                <button>
+                  <a href="https://fastsalesimoveis.com.br/checkout/corretor" className={styles.link_buy}>
+                    Assine agora
+                  </a>
+                </button>
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage}>Vantagens</p>
@@ -154,7 +163,9 @@ const PlansSecond = () => {
                 <p className={styles.free}>Fast Sale</p>
                 <p className={styles.details_free}>Venda imóveis de outros corretores em parceria</p>
                 <p className={styles.type}>Grátis</p>
-                <button>Acesse agora</button>
+                <button>
+                  <a style={{textDecoration: 'none', color: "#FFF"}} href="https://fastsaleimoveis.com.br/registre-se" >Cadastre-se</a> 
+                </button>
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage} data-tip="Texto do tooltip">Vantagens</p>
@@ -184,7 +195,11 @@ const PlansSecond = () => {
                   <p className={styles.times}>3x</p>
                   <p className={styles.price}>399<span className={styles.cents}>,90</span></p>
                 </div>
-                <button>Assine agora</button>
+                <button>
+                  <a href="https://fastsalesimoveis.com.br/checkout/imobiliaria" className={styles.link_buy}>
+                    Assine agora
+                  </a>
+                </button>
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage}>Vantagens</p>
@@ -222,7 +237,11 @@ const PlansSecond = () => {
                   <p className={styles.times}>12x</p>
                   <p className={styles.price}>249<span className={styles.cents}>,90</span></p>
                 </div>
-                <button>Assine agora</button>
+                <button>
+                  <a href="https://fastsalesimoveis.com.br/checkout/imobiliaria" className={styles.link_buy}>
+                    Assine agora
+                  </a>
+                </button>
               </div>
               <div className={styles.container_advantage}>
                 <p className={styles.advantage}>Vantagens</p>

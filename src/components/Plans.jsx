@@ -17,6 +17,7 @@ const Plans = () => {
   return(
     <section>
       <h1 className={styles.title}>Nossos planos</h1> 
+      <span className={styles.perfil}>Selecione o seu perfil</span>
 
       <div className={styles.container_buttons}>
         <div> 

@@ -1,5 +1,5 @@
 .container_footer {
-  height: 330px;
+  height: 400px;
   margin-top: 4rem;
   background-color: #f5f4f4;
   display: flex;
@@ -9,6 +9,7 @@
   overflow-y: clip;
   position: relative;
   gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .info_footer {
@@ -53,6 +54,11 @@
   margin-top: .5rem;
 }
 
+.container_email a {
+  text-decoration: underline;
+  color: #212529;
+}
+
 .email {
   margin-left: 1rem;
 }
@@ -72,6 +78,15 @@
 
 .none {
   display: none;
+}
+
+.link {
+  margin-left: 2.5rem;
+  text-decoration: solid;
+}
+
+.link:hover {
+  color: green;
 }
 
 @media(min-width: 759px) and (max-width: 1119px) {

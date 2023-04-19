@@ -33,7 +33,6 @@ function HeaderMobile() {
                   <li><a href="https://fastsaleimoveis.com.br/registre-se" target='blank'>Cadastre-se</a></li>
                   <li><a href="https://fastsaleimoveis.com.br/login" target='blank'>Entrar</a></li>
                   <hr />
-                  <li><a href="https://fastsaleimoveis.com.br/politicas" target='blank'>Políticas e termos de uso</a></li>
                   <li><a href="https://api.whatsapp.com/send/?phone=554741081865&text&type=phone_number&app_absent=0" target='blank'>Ajuda</a></li>
                 </ul>
               </div>

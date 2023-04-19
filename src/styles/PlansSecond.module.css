@@ -1,6 +1,6 @@
 .title {
   text-align: center;
-  padding: 0rem 2rem 2rem 2rem;
+  padding: 0rem 2rem 0rem 2rem;
   font-weight: 500;
   font-size: 2rem;
 }
@@ -248,6 +248,26 @@
   margin-left: .5rem;
 }
 
+.perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  font-size: 13px;
+  padding-top: 1.5rem;
+  font-weight: 300;
+}
+
+.link_buy {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.link_buy:hover {
+  color: #FFF;
+}
+
 @media(min-width: 320px) and (max-width: 759px) {
   .title {
     padding: 3rem 2rem 0rem 2rem;
@@ -257,7 +277,6 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin: 4rem 0;
   }
   .container {
     gap: 2rem;

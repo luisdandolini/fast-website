@@ -21,6 +21,8 @@
   padding: 1rem;
   border: 1px solid #f5f5f5;
   border-top: none;
+  font-size: .875rem;
+  font-weight: 300;
 }
 
 @media(min-width: 759px) and (max-width: 1119px) {

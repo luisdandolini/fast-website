@@ -55,6 +55,9 @@ const Footer = () => {
             <span><Icon path={mdiEmailOutline} size={1} color={'#3e5e3f'}/></span>
             <p className={styles.email}>administrativo@fastsaleimoveis.com.br</p>
           </div>
+          <div className={styles.container_email}>
+            <a href="https://fastsaleimoveis.com.br/politicas" target='blank' className={styles.link}>Políticas e termos de uso</a>
+          </div>
           <div className={`${!isMobile ? styles.nets : styles.none}`}>
             <div className={styles.nets}>
             <div className={styles.container_email}>

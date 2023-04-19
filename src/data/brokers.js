@@ -1,6 +1,6 @@
 import Bruno from './../assets/bruno.jpg';
 import Pierre from './../assets/pierre.jpg';
-import Antony from './../assets/antony.jpg';
+import Antony from './../assets/antony.png';
 import Marcele from './../assets/marcele.jpg';
 
 const brokers = [
@@ -15,7 +15,7 @@ const brokers = [
     image: Pierre,
     name: 'Pierre Cugnier',
     text: 'Fiz uma venda de 9 milhões utilizando a Fast Sale...',
-    profession: 'Corretor Premium',
+    profession: 'Corretor Fast Sale',
     link: 'https://www.instagram.com/tv/CaZ41FBFKo0/?igshid=MWI4MTIyMDE%3D'
   },
   {
@@ -29,7 +29,7 @@ const brokers = [
     image: Marcele,
     name: 'Marcele Machado',
     text: 'Nós precisamos de parceiros. A Fast com certeza está ajudando o mercado a crescer.',
-    profession: 'Corretora',
+    profession: 'Corretora Fast Sale',
     link: 'https://www.instagram.com/reel/CdoR9maF-oX/?igshid=MWI4MTIyMDE%3D'
   },
 ];

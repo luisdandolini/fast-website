@@ -5,7 +5,7 @@
 
 .title {
   text-align: center;
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 4rem 2rem 0rem 2rem;
   font-weight: 500;
   font-size: 2rem;
 }
@@ -168,6 +168,17 @@
 
 .container_button button:hover {
   background-color: #597d5a;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  font-size: 13px;
+  padding-top: 1.5rem;
+  font-weight: 300;
 }
 
 @media(min-width: 759px) and (max-width: 1119px) {
