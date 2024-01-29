@@ -27,4 +27,4 @@ Site informativo para apresentação do CRM da Fast Sale.
 
 ## Prévia
 
-![Imagem](https://uploaddeimagens.com.br/imagens/S_LpgWc)
+![Imagem](https://uploaddeimagens.com.br/images/004/725/391/full/Fast.png?1706535420)
